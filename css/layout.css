@@ -1,0 +1,247 @@
+body {
+  font-family: 'Segoe UI', "SegoeUI", 'Microsoft JhengHei', "微軟正黑體", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-size: 16px;
+  color: #474747;
+  background-color: #F8F8F8;
+}
+
+header {
+  background-color: #3693EC !important;
+  height: 85px;
+  color: #fff;
+  font-size: 14px;
+}
+
+form>div {
+  margin-bottom: 1rem;
+}
+
+small {
+  font-size: 12px;
+  color: #797979;
+  line-height: 38px;
+}
+
+.custom-control-label::before {
+  background-color: #E7E7E7;
+  border: 0
+}
+
+.custom-control-input:checked ~ .custom-control-label::before {
+  border-color: #2595E4;
+  background-color: #2595E4;
+}
+
+.logo {
+  width: 30%;
+}
+
+.logo-title {
+  padding: 32px;
+  letter-spacing: 5px;
+}
+
+.font-color-1177pay {
+  color: #2595E4;
+}
+
+.container {
+  max-width: 1024px;
+}
+
+.container-rocess {
+  padding: 3rem 0;
+  text-align: center;
+}
+
+.form-control,
+.custom-select {
+  font-size: 14px;
+  border-bottom: 1px solid #BDBDBD;
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+}
+
+.container-form {
+  max-width: 784px;
+  border-radius: 6px;
+  box-shadow: 0 0 30px 0 rgba(180, 180, 180, 0.25);
+}
+
+.container-form>div {
+  padding: 3rem;
+}
+
+::placeholder {
+  color: #C3C3C3 !important;
+  opacity: 1;
+  /* Firefox */
+  font-size: 14px;
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #C3C3C3 !important;
+  font-size: 14px;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: rgb(156, 12, 12) !important;
+  font-size: 14px;
+}
+
+.container-title {
+  color: #373E52;
+  font-size: 25px;
+  letter-spacing: 3.23px;
+  line-height: 37px;
+  margin-bottom: 3rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.container-title-name {
+  padding: 0.5rem;
+  margin-bottom: 0;
+  font-weight: bold;
+}
+
+.form-control:focus {
+  color: #C3C3C3;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  border-bottom: 1px solid #BDBDBD;
+}
+
+input[type="text"]:focus {
+  border: 1px solid #ccc;
+}
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.btn-block-content {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.btn-next {
+  height: 35px;
+  max-width: 276px;
+  width: 80%;
+  border-radius: 17.5px;
+  color: #fff;
+  background-color: #2595E4;
+  margin: 0 auto;
+}
+
+footer {
+  margin: 20px auto;
+  text-align: center;
+  font-size: 12px;
+}
+
+
+
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
+  header {
+    height: 60px;
+    font-size: 12px;
+  }
+
+  form>div {
+    margin-bottom: 0;
+  }
+
+  ::placeholder {
+    font-size: 12px;
+  }
+
+  :-ms-input-placeholder {
+    font-size: 12px;
+  }
+
+  ::-ms-input-placeholder {
+    font-size: 12px;
+  }
+
+  .logo-title {
+    padding: 21px;
+    letter-spacing: 5px;
+  }
+
+  .container {
+    padding: 0;
+  }
+
+  .container-rocess {
+    padding: 1rem;
+  }
+
+  .container-rocess img {
+    width: 100%;
+  }
+
+  .container-form>div {
+    padding: 1.5rem;
+  }
+
+  .container-title {
+    font-size: 18px;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+
+  .form-control,
+  .custom-select {
+    font-size: 12px;
+  }
+
+  .container-title-name{
+    display: block !important;
+  }
+
+  small {
+    margin: -8px 0 -12px 7rem;
+    font-size: 10px;
+  }
+
+  small.col-md-9 {
+    margin: 4px 0 0px 6rem;
+    font-size: 10px;
+    line-height: 16px;
+  }
+
+  .btn-block-content {
+    margin-top: 1.5rem;
+  }
+
+  .btn-block-content small {
+    margin: 0;
+    font-size: 10px;
+  }
+
+  .btn-next {
+    height: 30px;
+    width: 50%;
+    min-width: 120px;
+    font-size: 12px;
+    line-height: 12px;
+  }
+
+  footer {
+    margin: 10px auto;
+    font-size: 10px;
+  }
+}

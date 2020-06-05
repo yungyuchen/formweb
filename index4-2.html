@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Jekyll v4.0.1">
+  <title>Checkout example · Bootstrap</title>
+
+  <!-- <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/checkout/"> -->
+
+  <!-- Bootstrap core CSS -->
+  <link href="./assets/dist/css/bootstrap.css" rel="stylesheet">
+  <link href="./css/layout.css" rel="stylesheet">
+  
+  <!-- Custom styles for this template -->
+  <link href="form-validation.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <header>
+    <div class="container" style="max-width: 1024px;">
+      <img class="d-inline-block ml-3" src="./images/ic_logo.png" alt="">
+      <div class="d-inline-block" style="padding: 32px; letter-spacing: 5px;">
+        <span class="mr-2">|</span>線上收款服務</div>
+    </div>
+  </header>
+  <div class="container">
+    <div class="py-5 text-center">
+      <!-- <img class="d-inline-block ml-3" src="./images/ic_logo.png" alt=""> -->
+      <p class="font-weight-bold">商家資料 撥款帳戶與支付工具設定 系統串接設定 證件上傳</p>
+    </div>
+
+    <div class="container-form bg-white m-auto row">
+      <div class="col-md-12 order-md-1 p-5">
+        <h4 class="container-title mb-5 text-center font-weight-bold">撥款帳戶與支付工具設定</h4>
+        <form class="needs-validation" novalidate="">
+          <h5 class="text-center font-weight-bold m-5 font-color-1177pay">帳務設定</h5>
+          <div class="row mb-3">
+            <label class="p-2 col-md-3 mb-0">銀行名稱</label>
+            <select class="col-md-6 custom-select d-block" id="product_type" required="">
+              <option value="">請選擇金融銀行</option>
+              <option>製造</option>
+              <option>批發</option>
+              <option>零售</option>
+            </select>
+            <div class="invalid-feedback ml-3">請選擇金融銀行</div>
+          </div>
+
+          <div class="row mb-3">
+            <label class="p-2 col-md-3 mb-0">分行名稱</label>
+            <select class="col-md-6 custom-select d-block" id="product_type" required="">
+              <option value="">請選擇銀行分行</option>
+              <option>製造</option>
+              <option>批發</option>
+              <option>零售</option>
+            </select>
+            <div class="invalid-feedback ml-3">請選擇銀行分行</div>
+          </div>
+
+          <div class="row mb-3">
+            <label class="p-2 col-md-3 mb-0">帳戶名稱</label>
+            <input type="text" class="col-md-6 form-control" id="bank_name" placeholder="請輸入企業登記名稱" required="">
+            <div class="invalid-feedback ml-3">請輸入企業登記名稱</div>
+          </div>
+          <div class="row mb-3">
+            <label class="p-2 col-md-3 mb-0">銀行帳號</label>
+            <input type="text" class="col-md-6 form-control" id="bank_account" placeholder="請輸入銀行帳號" required="">
+            <div class="invalid-feedback ml-3">請輸入銀行帳號</div>
+          </div>
+
+          <h5 class="text-center font-weight-bold m-5 font-color-1177pay">支付工具申請</h5>
+
+          <div class="row mb-3 text-center">
+            <div class="col-md-2 custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="same-address1">
+              <label class="custom-control-label" style="font-size: 12px; line-height: 24px;">虛擬帳號</label>
+            </div>
+            <div class="col-md-2 custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="same-address2">
+              <label class="custom-control-label" style="font-size: 12px; line-height: 24px;">Web ATM</label>
+            </div>
+            <div class="col-md-2 custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="same-address3">
+              <label class="custom-control-label" style="font-size: 12px; line-height: 24px;">超商代收</label>
+            </div>
+            <div class="col-md-2 custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="same-address4">
+              <label class="custom-control-label" style="font-size: 12px; line-height: 24px;">信用卡</label>
+            </div>
+            <!-- <div class="invalid-feedback ml-3">請輸入公司負責人身分證字號</div> -->
+          </div>
+
+          <div class="row mb-3">
+            <label class="p-2 col-md-3 mb-0">商店行業類別</label>
+            <select class="col-md-6 custom-select d-block" id="product_type" required="">
+              <option value="">請選擇行業類別</option>
+              <option>實體商品</option>
+              <option>虛擬商品</option>
+              <option>遞延性服務</option>
+            </select>
+            <div class="invalid-feedback ml-3">請選擇行業類別</div>
+          </div>
+
+          <div class="row">
+            <label class="p-2 col-md-3 mb-3">商店中文名稱</label>
+            <input type="text" class="col-md-6 form-control" id="product_url" placeholder="請輸入商店中文名稱" required="">
+            <div class="invalid-feedback ml-3">請輸入商店中文名稱</div>
+          </div>
+
+          <div class="row">
+            <label class="p-2 col-md-3 mb-3">商店英文名稱</label>
+            <input type="text" class="col-md-6 form-control" id="product_url" placeholder="請輸入商店英文名稱" required="">
+            <div class="invalid-feedback ml-3">請輸入商店英文名稱</div>
+          </div>
+
+          <div class="row text-center mt-5">
+            <div class="col-md-6">
+              <button class="btn-next btn btn-block" type="">上一步</button>
+            </div>
+            <div class="col-md-6 text-center">
+              <button class="btn-next btn btn-block" type="submit">下一步</button>
+              <small>＊上列資訊與撥款作業有關，請務必填寫正確資料</small>
+            </div>
+        </div>
+        </form>
+      </div>
+    </div>
+
+    <footer class="my-2 pt-5 text-muted text-center text-small">
+      <p class="mb-1" style="font-size: 12px;">© 2020 Copyright 壹壹柒柒科技股份有限公司 All Rights Reserved</p>
+      <!-- <ul class="list-inline">
+        <li class="list-inline-item"><a href="#">Privacy</a></li>
+        <li class="list-inline-item"><a href="#">Terms</a></li>
+        <li class="list-inline-item"><a href="#">Support</a></li>
+      </ul> -->
+    </footer>
+  </div>
+
+  <script src="./js/jquery-3.5.1.slim.min.js"></script>
+  <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> -->
+  <!-- <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script> -->
+  <script src="./assets/dist/js/bootstrap.bundle.js"></script>
+  <script src="./js/form-validation.js"></script>
+</body>
+
+</html>

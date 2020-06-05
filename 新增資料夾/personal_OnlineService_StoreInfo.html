@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Jekyll v4.0.1">
+  <title>Checkout example · Bootstrap</title>
+
+  <!-- <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/checkout/"> -->
+
+  <!-- Bootstrap core CSS -->
+  <link href="./assets/dist/css/bootstrap.css" rel="stylesheet">
+  <link href="./css/layout.css" rel="stylesheet">
+  
+  <!-- Custom styles for this template -->
+  <link href="form-validation.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <header>
+    <div class="container" style="max-width: 1024px;">
+      <img class="d-inline-block ml-3" src="./images/ic_logo.png" alt="">
+      <div class="d-inline-block" style="padding: 32px; letter-spacing: 5px;">
+        <span class="mr-2">|</span>線上收款服務</div>
+    </div>
+  </header>
+  <div class="container">
+    <div class="py-5 text-center">
+      <!-- <img class="d-inline-block ml-3" src="./images/ic_logo.png" alt=""> -->
+      <p class="font-weight-bold">商家資料 撥款帳戶與支付工具設定 系統串接設定 證件上傳</p>
+    </div>
+
+    <div class="container-form bg-white m-auto row">
+      <div class="col-md-12 order-md-1 p-5">
+        <h4 class="container-title mb-5 text-center font-weight-bold">商家資料</h4>
+        <form class="needs-validation" novalidate="">
+
+          <div class="row mb-3">
+            <label class="p-2 col-md-3 mb-0">姓名</label>
+            <input type="text" class="col-md-6 form-control" id="company_name" placeholder="請輸入姓名" required="">
+            <div class="invalid-feedback ml-3">請輸入姓名</div>
+          </div>
+
+          <div class="row mb-3">
+            <label class="p-2 col-md-3 mb-0">身份證字號</label>
+            <input type="text" class="col-md-6 form-control" id="id" placeholder="請輸入身分證字號" required="">
+            <div class="invalid-feedback ml-3">請輸入身分證字號</div>
+          </div>
+
+          <div class="row mb-3">
+            <label class="p-2 col-md-3 mb-0">Email</label>
+            <input type="email" class="col-md-6 form-control" id="email" placeholder="請輸入電子信箱">
+            <small class="col-md-3 mb-0 p-0 pl-2">＊會員登入之識別帳號</small>
+            <div class="invalid-feedback ml-3">請輸入電子信箱</div>
+          </div>
+
+          <div class="row mb-3">
+            <label class="p-2 col-md-3 mb-0">聯絡電話</label>
+            <input type="text" class="col-md-6 form-control" id="phone" placeholder="請輸入手機門號或市話" required="">
+            <div class="invalid-feedback ml-3">請輸入手機門號或市話 </div>
+          </div>
+
+
+
+          <div class="row mb-3">
+            <label class="p-2 col-md-3 mb-0">營業地址</label>
+            <div class="col-md-3 p-0">
+              <select class="custom-select d-block w-100" id="company_country" required="">
+                <option value="">縣市</option>
+                <option>台北市</option>
+                <option>新北市</option>
+                <option>桃園市</option>
+                <option>台中市</option>
+                <option>台南市</option>
+                <option>高雄市</option>
+              </select>
+              <div class="invalid-feedback">
+                請輸入縣市
+              </div>
+            </div>
+            <div class="col-md-3">
+              <select class="custom-select d-block w-100" id="company_state" required="">
+                <option value="">區域</option>
+                <option>大安區</option>
+                <option>信義區</option>
+                <option>南港區</option>
+                <option>內湖區</option>
+              </select>
+              <div class="invalid-feedback">
+                請輸入區域
+              </div>
+            </div>
+            <div class="col-md-3">
+              <input type="text" class="form-control" id="company_address" placeholder="請輸入地址" required="">
+              <div class="invalid-feedback">
+                請輸入地址
+              </div>
+            </div>
+          </div>
+
+          <div class="row mb-3">
+            <label class="p-2 col-md-3 mb-0">帳單地址</label>
+            <div class="col-md-3 p-0">
+              <select class="custom-select d-block w-100" id="country" required="">
+                <option value="">縣市</option>
+                <option>台北市</option>
+                <option>新北市</option>
+                <option>桃園市</option>
+                <option>台中市</option>
+                <option>台南市</option>
+                <option>高雄市</option>
+              </select>
+              <div class="invalid-feedback">
+                請輸入縣市
+              </div>
+            </div>
+            <div class="col-md-3">
+              <select class="custom-select d-block w-100" id="state" required="">
+                <option value="">區域</option>
+                <option>大安區</option>
+                <option>信義區</option>
+                <option>南港區</option>
+                <option>內湖區</option>
+              </select>
+              <div class="invalid-feedback">
+                請輸入區域
+              </div>
+            </div>
+            <div class="col-md-3">
+              <input type="text" class="form-control" id="address" placeholder="請輸入地址" required="">
+              <div class="invalid-feedback">
+                請輸入地址
+              </div>
+            </div>
+          </div>
+
+          <div class="row mb-3">
+            <label class="p-2 col-md-3 mb-0"></label>
+            <div class="col-md-6 custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="same-address">
+              <label class="custom-control-label" style="font-size: 12px; line-height: 24px;">同營業地址</label>
+            </div>
+            <div class="invalid-feedback ml-3">請輸入公司負責人身分證字號</div>
+          </div>
+
+
+          <div class="row mb-3">
+            <label class="p-2 col-md-3 mb-0">販售商品型態</label>
+            <select class="col-md-6 custom-select d-block" id="product_type" required="">
+              <option value="">請選擇販售商品型態</option>
+              <option>製造</option>
+              <option>批發</option>
+              <option>零售</option>
+            </select>
+            <div class="invalid-feedback ml-3">請選擇販售商品型態</div>
+          </div>
+
+          <div class="row">
+            <label class="p-2 col-md-3 mb-0">商品網址</label>
+            <input type="text" class="col-md-6 form-control" id="product_url" placeholder="請輸入販售商品/服務的網址" required="">
+            <div class="invalid-feedback ml-3">請輸入販售商品/服務的網址</div>
+          </div>
+
+          <div class="row mb-3">
+            <label class="col-md-3 mb-0"></label>
+            <small class="col-md-9 mb-0 p-0">＊請提供可辨識官網網址/賣場網址/商品或服務銷售的個人社群網址</small>
+          </div>
+          
+          <div class="text-center mt-5">
+            <button class="btn-next btn btn-block" type="submit">下一步</button>
+            <small>＊上列資訊與撥款作業有關，請務必填寫正確資料</small>
+            <!-- <small></small> -->
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <footer class="my-2 pt-5 text-muted text-center text-small">
+      <p class="mb-1" style="font-size: 12px;">© 2020 Copyright 壹壹柒柒科技股份有限公司 All Rights Reserved</p>
+      <!-- <ul class="list-inline">
+        <li class="list-inline-item"><a href="#">Privacy</a></li>
+        <li class="list-inline-item"><a href="#">Terms</a></li>
+        <li class="list-inline-item"><a href="#">Support</a></li>
+      </ul> -->
+    </footer>
+  </div>
+
+  <script src="./js/jquery-3.5.1.slim.min.js"></script>
+  <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> -->
+  <!-- <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script> -->
+  <script src="./assets/dist/js/bootstrap.bundle.js"></script>
+  <script src="./js/form-validation.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="307px" height="25px" viewBox="0 0 307 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>060FFC09-19C4-44EA-B2FF-21C11870BF13</title>
+    <g id="申請流程" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="web_library" transform="translate(-568.000000, -674.000000)">
+            <g id="item_4step_01_mobile" transform="translate(564.000000, 672.000000)">
+                <text id="商家資料" font-family="NotoSansCJKtc-Medium, Noto Sans CJK TC" font-size="9" font-weight="400" letter-spacing="1.1612903" fill="#2595E4">
+                    <tspan x="4" y="25">商家資料</tspan>
+                </text>
+                <text id="撥款帳戶與支付工具設定" font-family="NotoSansCJKtc-Regular, Noto Sans CJK TC" font-size="9" font-weight="normal" letter-spacing="1.1612903" fill="#797979">
+                    <tspan x="54" y="25">撥款帳戶與支付工具設定</tspan>
+                </text>
+                <text id="系統串接設定" font-family="NotoSansCJKtc-Regular, Noto Sans CJK TC" font-size="9" font-weight="normal" letter-spacing="1.1612903" fill="#797979">
+                    <tspan x="173" y="26">系統串接設定</tspan>
+                </text>
+                <text id="證件上傳" font-family="NotoSansCJKtc-Regular, Noto Sans CJK TC" font-size="9" font-weight="normal" letter-spacing="1.1612903" fill="#797979">
+                    <tspan x="272" y="25">證件上傳</tspan>
+                </text>
+                <g id="ic/step/step/mobile" transform="translate(103.000000, 2.000000)">
+                    <circle id="Oval-Copy" stroke="#C3C3C3" stroke-width="0.5" cx="7" cy="7" r="6.75"></circle>
+                    <text id="2" font-family="NotoSansCJKtc-Medium, Noto Sans CJK TC" font-size="7" font-weight="400" fill="#797979">
+                        <tspan x="5" y="10">2</tspan>
+                    </text>
+                </g>
+                <g id="ic/step/step/mobile-copy" transform="translate(194.000000, 2.000000)">
+                    <circle id="Oval-Copy" stroke="#C3C3C3" stroke-width="0.5" cx="7" cy="7" r="6.75"></circle>
+                    <text id="2" font-family="NotoSansCJKtc-Medium, Noto Sans CJK TC" font-size="7" font-weight="400" fill="#797979">
+                        <tspan x="5" y="10">3</tspan>
+                    </text>
+                </g>
+                <g id="ic/step/step/mobile-copy-2" transform="translate(285.000000, 2.000000)">
+                    <circle id="Oval-Copy" stroke="#C3C3C3" stroke-width="0.5" cx="7" cy="7" r="6.75"></circle>
+                    <text id="2" font-family="NotoSansCJKtc-Medium, Noto Sans CJK TC" font-size="7" font-weight="400" fill="#797979">
+                        <tspan x="5" y="10">4</tspan>
+                    </text>
+                </g>
+                <line x1="33" y1="9.5" x2="95.9993782" y2="9.2200869" id="Line-5" stroke="#DDDDDD" stroke-width="0.5" stroke-linecap="square"></line>
+                <line x1="124" y1="9.2799131" x2="186.999378" y2="9" id="Line-5-Copy" stroke="#DDDDDD" stroke-width="0.5" stroke-linecap="square"></line>
+                <line x1="215" y1="9.2799131" x2="277.999378" y2="9" id="Line-5-Copy-2" stroke="#DDDDDD" stroke-width="0.5" stroke-linecap="square"></line>
+                <g id="ic/step/active/mobile" transform="translate(12.000000, 2.000000)">
+                    <g id="icon_blue">
+                        <circle id="Oval" stroke="#2595E4" stroke-width="0.5" cx="7" cy="7" r="6.75"></circle>
+                        <text id="1" font-family="NotoSansCJKtc-Medium, Noto Sans CJK TC" font-size="6.95483886" font-weight="400" letter-spacing="0.897398549" fill="#2595E4">
+                            <tspan x="4.96774194" y="9.35483871">1</tspan>
+                        </text>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
