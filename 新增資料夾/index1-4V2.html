@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v4.0.1">
+    <title>1177WebSite</title>
+
+    <!-- <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/checkout/"> -->
+
+    <!-- Bootstrap core CSS -->
+    <link href="./assets/dist/css/bootstrap.css" rel="stylesheet">
+    <link href="./css/layout.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="form-validation.css" rel="stylesheet">
+
+    <!-- Image Upload Button -->
+    <link href="./css/imageUploadButton.css" rel="stylesheet">
+</head>
+   
+<body>
+
+    <header>
+        <div class="container" style="max-width: 1024px;">
+            <img class="logo d-inline-block ml-3" src="./images/logo.svg" alt="">
+            <div class="logo-title d-inline-block">
+                <span class="mr-2">|</span>線上收款服務</div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="container-rocess">
+            <img src="./images/item_4step_04.svg" alt="">
+        </div>
+
+        <div class="container-form bg-white m-auto row">
+            <div class="col-md-12 order-md-1">
+                <h4 class="container-title" style="margin-bottom: 10px;">相關證件上傳</h4>
+                <div class="row text-center mb-3">
+                    <small class="col-md-9 m-auto">＊檔案上限為5MB，僅接受JPG.JPEG.PDF格式檔案</small>
+                </div>
+                <form class="needs-validation" novalidate="">
+
+                    <!-- <div class="row">
+                        <label class="col-md-5 container-title-name">公司經濟部設立函／變更登記表</label>
+                        <div class="col-md-6 custom-file">
+                            <input type="file" class="custom-file-input" id="customFile" required="">
+                            <label class="custom-file-label" for="customFile">上傳設立函／變更登記表</label>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <label class="col-md-5 container-title-name">負責人身分證正反面</label>
+                        <div class="col-md-6 custom-file">
+                            <input type="file" class="custom-file-input" id="customFile" required="">
+                            <label class="custom-file-label" for="customFile">上傳身分證正反面</label>
+                        </div>
+                    </div> -->
+
+                    <div class="row">
+                        <label class="col-md-5 container-title-name">公司經濟部設立函／變更登記表</label>
+                        <div class="col-md-6 custom-file">
+                            <input type="file" class="form-control-file p-2" id="">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <label class="col-md-5 container-title-name">負責人身分證正反面</label>
+                        <div class="col-md-6 custom-file">
+                            <input type="file" class="form-control-file p-2" id="">
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+                        <label class="col-md-5 container-title-name">公司存摺封面</label>
+                        <div class="col-md-6 custom-file">
+                            <input type="file" class="form-control-file p-2" id="">
+                        </div>
+                    </div>
+                     
+
+                    <div class="row">
+                        <label class="container-title-name col-md-5">驗證碼</label>
+                        <input type="text" class="form-control col-md-6" id="product_url" placeholder="請輸入驗證碼"
+                            required="">
+                    </div>
+
+                    <div class="row">
+                        <label class="col-4 col-md-3 mb-0"></label>
+                        <em class="captcha col-6" style="text-align: center;background-color: #ccc;font-size: 24px;">1 2
+                            3 4</em>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-6 btn-block-content text-center mt-5">
+                            <button class="btn-back btn btn-block" type="button">上一步</button>
+                        </div>
+                        <div class="col-6 btn-block-content text-center mt-5">
+                            <button class="btn-next btn btn-block" type="submit">下一步</button>
+                            <small>＊上列資訊與撥款作業有關，請務必填寫正確資料</small>
+                        </div>
+                    </div>
+
+
+                </form>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2020 Copyright 壹壹柒柒科技股份有限公司 All Rights Reserved</p>
+        </footer>
+    </div>
+
+    <script src="./js/jquery-3.5.1.slim.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> -->
+    <!-- <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script> -->
+    <script src="./assets/dist/js/bootstrap.bundle.js"></script>
+    <script src="./js/form-validation.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="./js/imageUploadButton.js"></script>
+
+    <script>
+        $('#card-info').on('click', function (event) {
+            var set_to_true = $(this).prop('checked') ? 'true' : 'false';
+            if (set_to_true == 'true') {
+                $('.card-info-block').css('display', 'block');
+            } else {
+                $('.card-info-block').css('display', 'none');
+            }
+        });
+
+        // if ($('#card-info').prop('checked'))  {
+        //   console('hihi');
+        //   $('.card-info-block').css('display','block');
+        // };
+    </script>
+
+</body>
+
+</html>
