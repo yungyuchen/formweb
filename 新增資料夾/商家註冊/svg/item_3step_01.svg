@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="511px" height="56px" viewBox="0 0 511 56" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>item_3step_01</title>
+    <g id="申請流程" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="web_library" transform="translate(-1361.000000, -242.000000)">
+            <g id="item/3step_1024" transform="translate(1361.000000, 237.000000)">
+                <g id="Group-16" transform="translate(0.000000, 5.000000)">
+                    <g id="Group-2" transform="translate(19.000000, 0.000000)">
+                        <g id="ic/step_active_1024">
+                            <g id="icon_blue">
+                                <circle id="Oval" stroke="#2595E4" cx="15.5" cy="15.5" r="15"></circle>
+                                <text id="1" font-family="NotoSansCJKtc-Medium, Noto Sans CJK TC" font-size="15.4000003" font-weight="400" letter-spacing="1.98709676" fill="#2595E4">
+                                    <tspan x="11" y="21">1</tspan>
+                                </text>
+                            </g>
+                        </g>
+                        <g id="ic/step_default_1024" transform="translate(221.000000, 0.000000)">
+                            <circle id="Oval-Copy" stroke="#C3C3C3" stroke-width="1" cx="15.5" cy="15.5" r="15"></circle>
+                            <text id="2" font-family="NotoSansCJKtc-Medium, Noto Sans CJK TC" font-size="15.4000003" font-weight="400" letter-spacing="1.98709676" fill="#797979">
+                                <tspan x="12" y="21">2</tspan>
+                            </text>
+                        </g>
+                        <g id="ic/step_default_1024" transform="translate(442.000000, 0.000000)">
+                            <circle id="Oval-Copy" stroke="#C3C3C3" stroke-width="1" cx="15.5" cy="15.5" r="15"></circle>
+                            <text id="2" font-family="NotoSansCJKtc-Medium, Noto Sans CJK TC" font-size="15.4000003" font-weight="400" letter-spacing="1.98709676" fill="#797979">
+                                <tspan x="12" y="21">3</tspan>
+                            </text>
+                        </g>
+                        <line x1="46.5" y1="15.5" x2="206.5" y2="15.5" id="Line-5" stroke="#DDDDDD" stroke-linecap="square"></line>
+                        <line x1="267.5" y1="15.5" x2="427.5" y2="15.5" id="Line-5-Copy" stroke="#DDDDDD" stroke-linecap="square"></line>
+                    </g>
+                    <text id="商家資料" font-family="NotoSansCJKtc-Medium, Noto Sans CJK TC" font-size="15.4000003" font-weight="400" letter-spacing="1.98709676" fill="#2595E4">
+                        <tspan x="0" y="54">商家資料</tspan>
+                    </text>
+                    <text id="撥款帳戶與支付工具設定" font-family="NotoSansCJKtc-Regular, Noto Sans CJK TC" font-size="16" font-weight="normal" letter-spacing="2.06451607" fill="#797979">
+                        <tspan x="158" y="54">撥款帳戶與支付工具設定</tspan>
+                    </text>
+                    <text id="證件上傳" font-family="NotoSansCJKtc-Regular, Noto Sans CJK TC" font-size="16" font-weight="normal" letter-spacing="2.06451607" fill="#797979">
+                        <tspan x="441" y="54">證件上傳</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

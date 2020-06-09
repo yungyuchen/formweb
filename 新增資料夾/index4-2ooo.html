@@ -20,21 +20,21 @@
     <div class="container" style="max-width: 1024px;">
       <img class="logo d-inline-block ml-3" src="./images/logo.svg" alt="">
       <div class="logo-title d-inline-block">
-        <span class="mr-2">|</span>帳單收款服務</div>
+        <span class="mr-2">|</span>線上收款服務</div>
     </div>
   </header>
   <div class="container">
     <div class="container-rocess">
-      <img src="./images/item_3step_02.png" alt="">
+      <img src="./images/item_4step_02.svg" alt="">
     </div>
     <div class="container-form bg-white m-auto row">
       <div class="col-md-12 order-md-1">
         <h4 class="container-title">撥款帳戶與支付工具設定</h4>
-        <form class="m-auto needs-validation" novalidate="" style="max-width: 500px;">
+        <form class="needs-validation" novalidate="">
           <h5 class="font-color-1177pay">帳務設定</h5>
-          <div class="m-auto row">
+          <div class="row">
             <label class="container-title-name col-4 col-md-3">銀行名稱</label>
-            <select class="col-8 col-md-9 custom-select d-block" id="product_type" required="">
+            <select class="col-8 col-md-6 custom-select d-block" id="product_type" required="">
               <option value="">請選擇金融銀行</option>
               <option>中國信託銀行</option>
               <option>國泰世華銀行</option>
@@ -42,9 +42,9 @@
               <option>台新銀行</option>
             </select>
           </div>
-          <div class="m-auto row">
+          <div class="row">
             <label class="container-title-name col-4 col-md-3">分行名稱</label>
-            <select class="col-8 col-md-9 custom-select d-block" id="product_type" required="">
+            <select class="col-8 col-md-6 custom-select d-block" id="product_type" required="">
               <option value="">請選擇銀行分行</option>
               <option>大安分行</option>
               <option>信義分行</option>
@@ -52,59 +52,61 @@
               <option>內湖分行</option>
             </select>
           </div>
-          <div class="m-auto row">
+          <div class="row">
             <label class="container-title-name col-4 col-md-3">帳戶名稱</label>
-            <input type="text" class="col-8 col-md-9 form-control" id="company_id" placeholder="請輸入帳戶名稱" required="">
+            <input type="text" class="form-control col-8 col-md-6" id="company_id" placeholder="請輸入帳戶名稱" required="">
           </div>
-          <div class="m-auto row">
-            <label class="col-4 col-md-3 container-title-name">銀行帳號</label>
-            <input type="text" class="col-8 col-md-9 form-control" id="company_name" placeholder="請輸入銀行帳號" required="">
+          <div class="row">
+            <label class="container-title-name col-4 col-md-3">銀行帳號</label>
+            <input type="text" class="form-control col-8 col-md-6" id="company_name" placeholder="請輸入銀行帳號" required="">
           </div>
           <h5 class="font-color-1177pay">支付工具申請</h5>
           <div class="payway-checkbox row">
             <div class="custom-control custom-checkbox">
               <input type="checkbox" class="custom-control-input" id="save-info1" required="">
-              <label class="custom-control-label" for="save-info1">虛擬帳號</label>
+              <label class="custom-control-label" for="save-info1"
+                style="font-size: 12px; line-height: 24px;">虛擬帳號</label>
             </div>
             <div class="custom-control custom-checkbox">
               <input type="checkbox" class="custom-control-input" id="save-info2" required="">
-              <label class="custom-control-label" for="save-info2">Web
+              <label class="custom-control-label" for="save-info2" style="font-size: 12px; line-height: 24px;">Web
                 ATM</label>
             </div>
             <div class="custom-control custom-checkbox">
               <input type="checkbox" class="custom-control-input" id="save-info3" required="">
-              <label class="custom-control-label" for="save-info3">超商代收</label>
+              <label class="custom-control-label" for="save-info3"
+                style="font-size: 12px; line-height: 24px;">超商代收</label>
             </div>
             <div class="custom-control custom-checkbox">
               <input type="checkbox" class="custom-control-input" id="card-info" required="">
-              <label class="custom-control-label" for="card-info">信用卡</label>
+              <label class="custom-control-label" for="card-info"
+                style="font-size: 12px; line-height: 24px;">信用卡</label>
             </div>
           </div>
-          <small class="d-block m-auto text-center">＊至少選擇一種支付工具</small>
           <div class="card-info-block" style="display: none;">
-            <div class="m-auto row">
-              <label class="container-title-name col-5 col-md-3">商店行業類別</label>
-              <select class="custom-select col-7 col-md-9 d-block" id="product_type" required="">
+            <div class="row">
+              <label class="container-title-name col-4 col-md-3">商店行業類別</label>
+              <select class="col-8 col-md-6 custom-select d-block" id="product_type" required="">
                 <option value="">請選擇行業類別</option>
                 <option>實體商品</option>
                 <option>虛擬商品</option>
                 <option>遞延性服務</option>
               </select>
             </div>
-            <div class="m-auto row">
-              <label class="container-title-name col-5 col-md-3">商店中文名稱</label>
-              <input type="text" class="form-control col-7 col-md-9" id="name" placeholder="請輸入商店中文名稱" required="">
+            <div class="row">
+              <label class="container-title-name col-4 col-md-3">商店中文名稱</label>
+              <input type="text" class="form-control col-8 col-md-6" id="name" placeholder="請輸入商店中文名稱" required="">
             </div>
-            <div class="m-auto row">
-              <label class="container-title-name col-5 col-md-3">商店英文名稱</label>
-              <input type="text" class="form-control col-7 col-md-9" id="id" placeholder="請輸入商店英文名稱" required="">
+            <div class="row">
+              <label class="container-title-name col-4 col-md-3">商店英文名稱</label>
+              <input type="text" class="form-control col-8 col-md-6" id="id" placeholder="請輸入商店英文名稱" required="">
             </div>
           </div>
           <div class="row">
-            <div class="col-6 btn-block-content text-center p-0">
+            <div class="col-6 btn-block-content text-center mt-5">
               <button class="btn-back btn btn-block" type="button">上一步</button>
             </div>
-            <div class="col-6 btn-block-content text-center p-0">
+            <div class="col-6 btn-block-content text-center mt-5">
               <button class="btn-next btn btn-block" type="submit">下一步</button>
               <small>＊上列資訊與撥款作業有關，請務必填寫正確資料</small>
             </div>

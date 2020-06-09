@@ -14,7 +14,25 @@
     <!-- Custom styles for this template -->
     <link href="form-validation.css" rel="stylesheet">
 </head>
+<!-- <style>
+    @media (max-width: 768px) {
+        .container-title-name {
+            text-align: center;
+            margin: 20px auto 10px;
+        }
 
+        .form-control-file {
+            text-align: center;
+            width: 200px;
+            margin: 0px auto;
+        }
+
+        .form-control {
+            width: 50%;
+            margin: auto;
+        }
+    }
+</style> -->
 <body>
     <header>
         <div class="container" style="max-width: 1024px;">
@@ -25,7 +43,7 @@
     </header>
     <div class="container">
         <div class="container-rocess">
-            <img src="./images/item_4step_04.svg" alt="">
+            <img src="./images/item_4step_04.png" alt="">
         </div>
         <div class="container-form bg-white m-auto row">
             <div class="col-md-12 order-md-1">
@@ -33,26 +51,26 @@
                 <div class="row text-center mb-3">
                     <small class="col-md-9 m-auto">＊檔案上限為5MB，僅接受JPG.JPEG.PDF格式檔案</small>
                 </div>
-                <form class="needs-validation" novalidate="">
+                <form class="m-auto needs-validation" novalidate="" style="max-width: 350px;">
                     <div class="row">
-                        <label class="col-md-5 container-title-name">身分證正反面</label>
-                        <div class="col-md-6 custom-file">
+                        <label class="container-title-name col-4 col-md-4">身分證正反面</label>
+                        <div class="col-8 col-md-8 custom-file">
                             <input type="file" class="form-control-file p-2" id="">
                         </div>
                     </div>
                     <div class="row">
-                        <label class="col-md-5 container-title-name">個人存摺封面</label>
-                        <div class="col-md-6 custom-file">
+                        <label class="container-title-name col-4 col-md-4">個人存摺封面</label>
+                        <div class="col-8 col-md-8 custom-file">
                             <input type="file" class="form-control-file p-2" id="">
                         </div>
                     </div>
                     <div class="row">
-                        <label class="container-title-name col-md-5">驗證碼</label>
-                        <input type="text" class="form-control col-md-6" id="product_url" placeholder="請輸入驗證碼"
-                            required="">
+                        <label class="container-title-name col-4 col-md-4">驗證碼</label>
+                        <input type="text" class="col-7 form-control" id="product_url" placeholder="請輸入驗證碼" required="" style="margin-left: 20px;">
                     </div>
                     <div class="row">
-                        <em class="captcha col-6" style="text-align: center;background-color: #ccc;font-size: 24px;">1 2
+                        <label class="container-title-name col-4 col-md-4"></label>
+                        <em class="captcha col-7" style="text-align: center;background-color: #ccc;font-size: 24px;">1 2
                             3 4</em>
                     </div>
                     <div class="row">
@@ -62,14 +80,15 @@
                             <input type="checkbox" class="custom-control-input " id="save-info1" required="">
                             <label class="custom-control-label" for="save-info1"
                                 style="font-size: 14px; line-height: 24px;">我同意<span
-                                    style="color: #2595E4;">1177PAY平台服務條款</span></label>
+                                    style="color: #2595E4;">1177PAY平台服務條款<em
+                                        style="font-size: 0.8em;color: #9E0000;font-style: unset;">＊請勾選我同意服務條款</em></span></label>
                         </div>
                         <div class="col-6 btn-block-content text-center mt-3">
                             <button class="btn-back btn btn-block" type="button">上一步</button>
                         </div>
                         <div class="col-6 btn-block-content text-center mt-3">
                             <button class="btn-next btn btn-block" type="submit">送出</button>
-                            <small>＊上列資訊與撥款作業有關，請務必填寫正確資料</small>
+                            <!-- <small>＊上列資訊與撥款作業有關，請務必填寫正確資料</small> -->
                         </div>
                     </div>
                 </form>
