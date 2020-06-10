@@ -201,13 +201,11 @@
     });
    
     $(".btn-next").click(function(){
-			var check=$("input[name='checkbox']:checked").length;//判斷有多少個方框被勾選
+			var check=$("input[name='checkbox']:checked").length;
 			if(check==0){
-				alert("您未勾選任何項目");
-				return false;//不要提交表單
+				return false;
 			}else{
-				alert("你勾選了"+check+"個項目");
-				return true;//提交表單
+				return true;
 			}
 		})
 
