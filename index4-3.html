@@ -69,16 +69,55 @@
             <label class="col-4 col-md-3 mb-0"></label>
             <small class="col-8 col-md-9">＊當消費者完成付款，付款結果轉導至此商店指定之網址頁面</small>
           </div>
-          <div class="m-auto row">
-            <div class="col-6 btn-block-content text-center">
-              <button class="btn-back btn btn-block" type="button">上一步</button>
+          <center>
+            <div class="btn-block-content">
+              <button class="btn-back btn" type="button">上一步</button>
+              <button class="btn-next btn" type="submit" data-toggle="modal" data-target="#formError">下一步</button>
             </div>
-            <div class="col-6 btn-block-content text-center">
-              <button class="btn-next btn btn-block" type="submit">下一步</button>
-              <!-- <small>＊上列資訊與撥款作業有關，請務必填寫正確資料</small> -->
+          </center>
+        </form>
+        
+        <!-- Modal FormCorrect -->
+        <div class="modal fade" id="formCorrect" tabindex="-1" role="dialog" aria-labelledby="formCorrectLabel"
+          aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="formCorrectLabel">註冊成功</h5>
+              </div>
+              <div class="modal-body">
+                當您申請線上收款服務後，您將收到一封帳號開通信件及一封測試環境開通信件，測試環境開通信件檢附〔商店檢核表〕，待您測試完畢後填妥檢核表即進入審核階段，壹壹柒柒科技將根據您所提交的商店申請資料進行審核，審核時間約1~2個工作天審核通過後，您將收到一封〔商店開通正式通知信〕，即可開始使用系統。
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary" onclick="window.location.href='index.html'">確認</button>
+              </div>
             </div>
           </div>
-        </form>
+        </div>
+        <!-- Modal FormCorrect -->
+
+        <!-- Modal FormError -->
+        <div class="modal fade" id="formError" tabindex="-1" role="dialog" aria-labelledby="formErrorLabel"
+          aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="formErrorLabel">格式錯誤</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                您的格式有錯誤，請重新填寫，感謝!
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">確認</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Modal FormError -->
+
       </div>
     </div>
     <footer>

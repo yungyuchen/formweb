@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>@ic/30/ic_delete_circle</title>
+    <g id="@ic/30/ic_delete_circle" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M15,4 C8.95,4 4,8.95 4,15 C4,21.05 8.95,26 15,26 C21.05,26 26,21.05 26,15 C26,8.95 21.05,4 15,4 L15,4 Z" id="Shape" fill="#FF6440"></path>
+        <line x1="11" y1="19" x2="19" y2="11" id="Line" stroke="#FFFFFF" stroke-width="1.875" stroke-linecap="round" stroke-linejoin="round" transform="translate(15.000000, 15.000000) scale(-1, 1) translate(-15.000000, -15.000000) "></line>
+        <line x1="11" y1="19" x2="19" y2="11" id="Line" stroke="#FFFFFF" stroke-width="1.875" stroke-linecap="round" stroke-linejoin="round" transform="translate(15.000000, 15.000000) scale(-1, -1) translate(-15.000000, -15.000000) "></line>
+    </g>
+</svg>

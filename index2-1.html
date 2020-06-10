@@ -8,19 +8,14 @@
   <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
   <meta name="generator" content="Jekyll v4.0.1">
   <title>1177WebSite</title>
-
-  <!-- <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/checkout/"> -->
-
   <!-- Bootstrap core CSS -->
   <link href="./assets/dist/css/bootstrap.css" rel="stylesheet">
   <link href="./css/layout.css" rel="stylesheet">
-
   <!-- Custom styles for this template -->
   <link href="form-validation.css" rel="stylesheet">
 </head>
 
 <body>
-
   <header>
     <div class="container" style="max-width: 1024px;">
       <img class="logo d-inline-block ml-3" src="./images/logo.svg" alt="">
@@ -32,37 +27,30 @@
     <div class="container-rocess">
       <img src="./images/item_3step_01.png" alt="">
     </div>
-
     <div class="container-form bg-white m-auto row">
       <div class="col-md-12 order-md-1">
         <h4 class="container-title">商家資料</h4>
         <form class="m-auto needs-validation" novalidate="" style="max-width: 650px;">
-
           <div class="row">
             <label class="container-title-name col-4 col-md-3">姓名</label>
             <input type="text" class="form-control col-8 col-md-6" id="name" placeholder="請輸入姓名" required="">
           </div>
-
           <div class="row">
             <label class="container-title-name col-4 col-md-3">身份證字號</label>
             <input type="text" class="form-control col-8 col-md-6" id="id" placeholder="請輸入身份證字號" required="">
           </div>
-
           <div class="row">
             <label class="container-title-name col-4 col-md-3">Email</label>
-            <input type="text" class="form-control col-8 col-md-6" id="company_name" placeholder="請輸入電子信箱"
-              required="">
+            <input type="text" class="form-control col-8 col-md-6" id="company_name" placeholder="請輸入電子信箱" required="">
             <small>＊會員登入之識別帳號</small>
           </div>
-
           <div class="row">
             <label class="container-title-name col-4 col-md-3">聯絡電話</label>
             <input type="text" class="form-control col-8 col-md-6" id="phone" placeholder="請輸入手機門號或市話" required="">
           </div>
-
           <div class="row">
             <label class="container-title-name col-4 col-md-3">營業地址</label>
-            <div class="col-4 col-md-2 p-0">
+            <div class="col-4 col-md-2 pl-0 address-select">
               <select class="custom-select d-block w-100" id="company_country" required="">
                 <option value="">縣市</option>
                 <option>台北市</option>
@@ -73,7 +61,7 @@
                 <option>高雄市</option>
               </select>
             </div>
-            <div class="col-4 col-md-2">
+            <div class="col-4 col-md-2 pl-0 address-select">
               <select class="custom-select d-block w-100" id="company_state" required="">
                 <option value="">區域</option>
                 <option>大安區</option>
@@ -87,10 +75,9 @@
               <input type="text" class="form-control" id="company_address" placeholder="請輸入地址" required="">
             </div>
           </div>
-
           <div class="row">
             <label class="container-title-name col-4 col-md-3">帳單地址</label>
-            <div class="col-4 col-md-2 p-0">
+            <div class="col-4 col-md-2 pl-0 address-select">
               <select class="custom-select d-block w-100" id="country" required="">
                 <option value="">縣市</option>
                 <option>台北市</option>
@@ -101,7 +88,7 @@
                 <option>高雄市</option>
               </select>
             </div>
-            <div class="col-4 col-md-2">
+            <div class="col-4 col-md-2 pl-0 address-select">
               <select class="custom-select d-block w-100" id="state" required="">
                 <option value="">區域</option>
                 <option>大安區</option>
@@ -115,7 +102,6 @@
               <input type="text" class="form-control" id="address" placeholder="請輸入地址" required="">
             </div>
           </div>
-
           <div class="row">
             <label class="container-title-name col-4 col-md-3"></label>
             <div class="custom-control custom-checkbox">
@@ -124,7 +110,6 @@
                 style="font-size: 12px; line-height: 24px;">同營業地址</label>
             </div>
           </div>
-
           <div class="row">
             <label class="container-title-name col-4 col-md-3">販售商品型態</label>
             <select class="col-8 col-md-6 custom-select d-block" id="product_type" required="">
@@ -134,35 +119,70 @@
               <option>遞延性服務</option>
             </select>
           </div>
-
           <div class="row">
             <label class="container-title-name col-4 col-md-3">商品網址</label>
-            <input type="text" class="form-control col-8 col-md-6" id="product_url" placeholder="請輸入販售商品/服務的網址"
-              required="">
+            <input type="text" class="form-control col-8 col-md-6" id="product_url" placeholder="請輸入販售商品/服務的網址">
           </div>
-
           <div class="row">
             <label class="col-md-3 mb-0"></label>
             <small class="col-md-9">＊請提供可辨識官網網址/賣場網址/商品或服務銷售的個人社群網址</small>
           </div>
-
-          <div class="btn-block-content text-center mt-5">
-            <button class="btn-next btn btn-block" type="submit">下一步</button>
+          <center>
+            <div class="btn-block-content">
+              <button class="btn-next btn m-auto" type="submit" data-toggle="modal" data-target="#formError">下一步</button>
+            </div>
             <small>＊上列資訊與撥款作業有關，請務必填寫正確資料</small>
-          </div>
-
+          </center>
         </form>
+        
+        <!-- Modal FormCorrect -->
+        <div class="modal fade" id="formCorrect" tabindex="-1" role="dialog" aria-labelledby="formError"
+          aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="formCorrectLabel">註冊成功</h5>
+              </div>
+              <div class="modal-body">
+                當您申請帳單收款服務後，您將收到一封帳號開通信件，壹壹柒柒科技將根據您所提交的商店申請資料進行審核，審核時間約1~2個工作天審核通過後，您將收到一封〔商店開通正式通知信〕，即可開始使用系統。
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary" onclick="window.location.href='index.html'">確認</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Modal FormCorrect -->
+
+        <!-- Modal FormError -->
+        <div class="modal fade" id="formError" tabindex="-1" role="dialog" aria-labelledby="formErrorLabel"
+          aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="formErrorLabel">格式錯誤</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                您的格式有錯誤，請重新填寫，感謝!
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">確認</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Modal FormError -->
+
       </div>
     </div>
-
     <footer>
       <p>&copy; 2020 Copyright 壹壹柒柒科技股份有限公司 All Rights Reserved</p>
     </footer>
   </div>
-
   <script src="./js/jquery-3.5.1.slim.min.js"></script>
-  <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> -->
-  <!-- <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script> -->
   <script src="./assets/dist/js/bootstrap.bundle.js"></script>
   <script src="./js/form-validation.js"></script>
 </body>

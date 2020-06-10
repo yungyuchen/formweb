@@ -11,13 +11,10 @@
   <!-- Bootstrap core CSS -->
   <link href="./assets/dist/css/bootstrap.css" rel="stylesheet">
   <link href="./css/layout.css" rel="stylesheet">
-  
   <!-- Custom styles for this template -->
-  <!-- <link href="form-validation.css" rel="stylesheet"> -->
+  <link href="form-validation.css" rel="stylesheet">
   <!-- select2 -->
   <link href="plugin/select2/select2.min.css?20190715" rel="stylesheet"/>
-  <!-- <link href="plugin/wow/animate.css?20190715" rel="stylesheet"/> -->
-  <!-- <link href="css/layout_v2.css?20190731" rel="stylesheet" id="linkCss"/> -->
 </head>
 
 <body>
@@ -37,8 +34,7 @@
         <h4 class="container-title">撥款帳戶與支付工具設定</h4>
         <form class="m-auto needs-validation" novalidate="" style="max-width: 500px;">
           <h5 class="font-color-1177pay">帳務設定</h5>
-
-
+            <!-- form-group row-->
           <div class="m-auto row">
             <label class="container-title-name col-4 col-md-3">銀行名稱</label>
             <div class="col-8 col-md-9 custom-select d-block">
@@ -333,7 +329,7 @@
             <label class="container-title-name col-4 col-md-3">分行名稱</label>
             <div class="col-8 col-md-9 custom-select d-block">
               <select class="form-control user" id="a_branch_list" name="a_branch_list" required="">
-                <option>請輸入/選擇金融分行</option>
+                <option>請選擇銀行分行</option>
               </select>
             </div>
           </div>
@@ -349,24 +345,24 @@
           <h5 class="font-color-1177pay">支付工具申請</h5>
           <div class="payway-checkbox row">
             <div class="custom-control custom-checkbox">
-              <input type="checkbox" class="custom-control-input" id="save-info1" required="">
+              <input type="checkbox" class="custom-control-input" id="save-info1" required="" checked>
               <label class="custom-control-label" for="save-info1">虛擬帳號</label>
             </div>
             <div class="custom-control custom-checkbox">
-              <input type="checkbox" class="custom-control-input" id="save-info2" required="">
+              <input type="checkbox" class="custom-control-input" id="save-info2" required="" checked>
               <label class="custom-control-label" for="save-info2">Web
                 ATM</label>
             </div>
             <div class="custom-control custom-checkbox">
-              <input type="checkbox" class="custom-control-input" id="save-info3" required="">
+              <input type="checkbox" class="custom-control-input" id="save-info3" required="" checked>
               <label class="custom-control-label" for="save-info3">超商代收</label>
             </div>
             <div class="custom-control custom-checkbox">
-              <input type="checkbox" class="custom-control-input" id="card-info" required="">
+              <input type="checkbox" class="custom-control-input" id="card-info" required="" checked>
               <label class="custom-control-label" for="card-info">信用卡</label>
             </div>
           </div>
-          <div class="card-info-block" style="display: none;">
+          <div class="card-info-block">
             <div class="m-auto row">
               <label class="container-title-name col-5 col-md-3">商店行業類別</label>
               <select class="custom-select col-7 col-md-9 d-block" id="product_type" required="">
@@ -385,16 +381,56 @@
               <input type="text" class="form-control col-7 col-md-9" id="id" placeholder="請輸入商店英文名稱" required="">
             </div>
           </div>
-          <div class="row">
-            <div class="col-6 btn-block-content text-center p-0">
-              <button class="btn-back btn btn-block" type="button">上一步</button>
+          <center>
+            <div class="btn-block-content">
+              <button class="btn-back btn" type="button">上一步</button>
+              <button class="btn-next btn" type="submit" data-toggle="modal" data-target="#formError">下一步</button>
             </div>
-            <div class="col-6 btn-block-content text-center p-0">
-              <button class="btn-next btn btn-block" type="submit">下一步</button>
-              <small>＊上列資訊與撥款作業有關，請務必填寫正確資料</small>
+            <small>＊上列資訊與撥款作業有關，請務必填寫正確資料</small>
+          </center>
+        </form>
+        
+        <!-- Modal FormCorrect -->
+        <div class="modal fade" id="formCorrect" tabindex="-1" role="dialog" aria-labelledby="formError"
+          aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="formCorrectLabel">註冊成功</h5>
+              </div>
+              <div class="modal-body">
+                當您申請帳單收款服務後，您將收到一封帳號開通信件，壹壹柒柒科技將根據您所提交的商店申請資料進行審核，審核時間約1~2個工作天審核通過後，您將收到一封〔商店開通正式通知信〕，即可開始使用系統。
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary" onclick="window.location.href='index.html'">確認</button>
+              </div>
             </div>
           </div>
-        </form>
+        </div>
+        <!-- Modal FormCorrect -->
+
+        <!-- Modal FormError -->
+        <div class="modal fade" id="formError" tabindex="-1" role="dialog" aria-labelledby="formErrorLabel"
+          aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="formErrorLabel">格式錯誤</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                您的格式有錯誤，請重新填寫，感謝!
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">確認</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Modal FormError -->
+
       </div>
     </div>
     <footer>
@@ -403,30 +439,16 @@
   </div>
   <script src="./js/jquery-3.5.1.slim.min.js"></script>
   <script src="./assets/dist/js/bootstrap.bundle.js"></script>
-  <!-- <script src="./js/form-validation.js"></script> -->
-
-
-
-  <!-- <script src="js/jquery-3.3.1.min.js?20190506"></script> -->
-  <!-- <script src="js/popper.min.js?20190506"></script> -->
-  <!-- <script src="js/bootstrap.min.js?20190506"></script> -->
-  <!-- <script src="js/main.js?20190506"></script> -->
-  <!-- <script src="plugin/wow/wow.min.js?20190506"></script> -->
-
-  <!-- <script>new WOW().init();</script> -->
-  <!-- <script src="plugin/select2/jquery-3.3.1.min.js?20190506"></script> -->
+  <script src="./js/form-validation.js"></script>
   <script src="plugin/select2/select2.min.js?20190506"></script>
-  <!-- <script src="plugin/select2/zh-TW.js?20190506"></script> -->
   <script src="js/form.js?20190506"></script>
-
-
   <script>
     $('#card-info').on('click', function (event) {
       var set_to_true = $(this).prop('checked') ? 'true' : 'false';
-      if (set_to_true == 'true') {
-        $('.card-info-block').css('display', 'block');
-      } else {
+      if (set_to_true == 'false') {
         $('.card-info-block').css('display', 'none');
+      } else {
+        $('.card-info-block').css('display', 'block');
       }
     });
   </script>

@@ -14,25 +14,7 @@
     <!-- Custom styles for this template -->
     <link href="form-validation.css" rel="stylesheet">
 </head>
-<!-- <style>
-    @media (max-width: 768px) {
-        .container-title-name {
-            text-align: center;
-            margin: 20px auto 10px;
-        }
 
-        .form-control-file {
-            text-align: center;
-            width: 200px;
-            margin: 0px auto;
-        }
-
-        .form-control {
-            width: 50%;
-            margin: auto;
-        }
-    }
-</style> -->
 <body>
     <header>
         <div class="container" style="max-width: 1024px;">
@@ -47,7 +29,7 @@
         </div>
         <div class="container-form bg-white m-auto row">
             <div class="col-md-12 order-md-1">
-                <h4 class="container-title" style="margin-bottom: 10px;">相關證件上傳</h4>
+                <h4 class="container-title" style="margin-bottom: -5px;">相關證件上傳</h4>
                 <div class="row text-center mb-3">
                     <small class="col-md-9 m-auto">＊檔案上限為5MB，僅接受JPG.JPEG.PDF格式檔案</small>
                 </div>
@@ -72,11 +54,13 @@
                     </div>
                     <div class="row">
                         <label class="container-title-name col-5 col-md-6">驗證碼</label>
-                        <input type="text" class="col-6 col-md-5 form-control" id="product_url" placeholder="請輸入驗證碼" required="" style="margin-left: 20px;">
+                        <input type="text" class="col-6 col-md-5 form-control" id="product_url" placeholder="請輸入驗證碼"
+                            required="" style="margin-left: 20px;">
                     </div>
                     <div class="row">
                         <label class="container-title-name col-5 col-md-6"></label>
-                        <em class="captcha col-6 col-md-5" style="text-align: center;background-color: #ccc;font-size: 24px;">1 2
+                        <em class="captcha col-6 col-md-5"
+                            style="text-align: center;background-color: #ccc;font-size: 24px;">1 2
                             3 4</em>
                     </div>
                     <div class="row">
@@ -84,19 +68,70 @@
                     <div class="row">
                         <div class="custom-control custom-checkbox col-md-12 mt-3 text-center">
                             <input type="checkbox" class="custom-control-input " id="save-info1" required="">
-                            <label class="custom-control-label" for="save-info1"
-                                style="font-size: 14px; line-height: 24px;">我同意<span
-                                    style="color: #2595E4;">1177PAY平台服務條款</span></label>
+                            <label class="custom-control-label agree1177pay"
+                                for="save-info1">我同意<span>1177PAY平台服務條款</span>
+                                <div class="invalid-feedback">＊請勾選我同意服務條款</div>
+                            </label>
+                            <div class="notice d-inline"></div>
                         </div>
                         <div class="col-6 btn-block-content text-center mt-3">
                             <button class="btn-back btn btn-block" type="button">上一步</button>
                         </div>
                         <div class="col-6 btn-block-content text-center mt-3">
                             <button class="btn-next btn btn-block" type="submit">送出</button>
-                            <!-- <small>＊上列資訊與撥款作業有關，請務必填寫正確資料</small> -->
                         </div>
                     </div>
+                    <center>
+                        <div class="btn-block-content">
+                            <button class="btn-back btn" type="button">上一步</button>
+                            <button class="btn-next btn" type="submit" data-toggle="modal"
+                                data-target="#formError">送出</button>
+                        </div>
+                    </center>
                 </form>
+
+                <!-- Modal FormCorrect -->
+                <div class="modal fade" id="formCorrect" tabindex="-1" role="dialog" aria-labelledby="formCorrectLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="formCorrectLabel">註冊成功</h5>
+                            </div>
+                            <div class="modal-body">
+                                當您申請線上收款服務後，您將收到一封帳號開通信件及一封測試環境開通信件，測試環境開通信件檢附〔商店檢核表〕，待您測試完畢後填妥檢核表即進入審核階段，壹壹柒柒科技將根據您所提交的商店申請資料進行審核，審核時間約1~2個工作天審核通過後，您將收到一封〔商店開通正式通知信〕，即可開始使用系統。
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary"
+                                    onclick="window.location.href='index.html'">確認</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal FormCorrect -->
+
+                <!-- Modal FormError -->
+                <div class="modal fade" id="formError" tabindex="-1" role="dialog" aria-labelledby="formErrorLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="formErrorLabel">格式錯誤</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                您的格式有錯誤，請重新填寫，感謝!
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">確認</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal FormError -->
+
             </div>
         </div>
         <footer>

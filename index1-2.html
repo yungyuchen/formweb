@@ -13,6 +13,8 @@
   <link href="./css/layout.css" rel="stylesheet">
   <!-- Custom styles for this template -->
   <link href="form-validation.css" rel="stylesheet">
+  <!-- select2 -->
+  <link href="plugin/select2/select2.min.css?20190715" rel="stylesheet" />
 </head>
 
 <body>
@@ -30,28 +32,38 @@
     <div class="container-form bg-white m-auto row">
       <div class="col-md-12 order-md-1">
         <h4 class="container-title">撥款帳戶與支付工具設定</h4>
-        <form class="m-auto needs-validation" novalidate="" style="max-width: 500px;">
+        <form class="m-auto needs-validation" novalidate="" style="max-width: 550px;">
           <h5 class="font-color-1177pay">帳務設定</h5>
+          <!-- form-group row-->
           <div class="m-auto row">
             <label class="container-title-name col-4 col-md-3">銀行名稱</label>
-            <select class="col-8 col-md-9 custom-select d-block" id="product_type" required="">
-              <option value="">請選擇金融銀行</option>
-              <option>中國信託銀行</option>
-              <option>國泰世華銀行</option>
-              <option>玉山銀行</option>
-              <option>台新銀行</option>
-            </select>
+            <div class="col-8 col-md-9 custom-select d-block">
+              <select class="custom-select user" id="a_bankid_list" name="a_bankid_list" required="">
+                <option value="">請選擇金融銀行</option>
+                <option>000-中央銀行國庫局</option>
+                <option>004-臺灣銀行</option>
+                <option>005-臺灣土地銀行</option>
+                <option>006-合作金庫商業銀行</option>
+                <option>007-第一商業銀行</option>
+                <option>008-華南商業銀行</option>
+                <option>009-彰化商業銀行</option>
+              </select>
+            </div>
           </div>
+          <!-- form-group row-->
           <div class="m-auto row">
             <label class="container-title-name col-4 col-md-3">分行名稱</label>
-            <select class="col-8 col-md-9 custom-select d-block" id="product_type" required="">
-              <option value="">請選擇銀行分行</option>
-              <option>大安分行</option>
-              <option>信義分行</option>
-              <option>南港分行</option>
-              <option>內湖分行</option>
-            </select>
+            <div class="col-8 col-md-9 custom-select d-block">
+              <select class="form-control user" id="a_branch_list" name="a_branch_list" required="">
+                <option value="">請選擇銀行分行</option>
+                <option>大安分行</option>
+                <option>信義分行</option>
+                <option>南港分行</option>
+                <option>內湖分行</option>
+              </select>
+            </div>
           </div>
+          <!-- form-group row-->
           <div class="m-auto row">
             <label class="container-title-name col-4 col-md-3">帳戶名稱</label>
             <input type="text" class="col-8 col-md-9 form-control" id="company_id" placeholder="請輸入帳戶名稱" required="">
@@ -63,24 +75,24 @@
           <h5 class="font-color-1177pay">支付工具申請</h5>
           <div class="payway-checkbox row">
             <div class="custom-control custom-checkbox">
-              <input type="checkbox" class="custom-control-input" id="save-info1" required="">
+              <input type="checkbox" class="custom-control-input" name="checkbox"  id="save-info1" checked>
               <label class="custom-control-label" for="save-info1">虛擬帳號</label>
             </div>
             <div class="custom-control custom-checkbox">
-              <input type="checkbox" class="custom-control-input" id="save-info2" required="">
+              <input type="checkbox" class="custom-control-input" name="checkbox" id="save-info2" checked>
               <label class="custom-control-label" for="save-info2">Web
                 ATM</label>
             </div>
             <div class="custom-control custom-checkbox">
-              <input type="checkbox" class="custom-control-input" id="save-info3" required="">
+              <input type="checkbox" class="custom-control-input" name="checkbox" id="save-info3" checked>
               <label class="custom-control-label" for="save-info3">超商代收</label>
             </div>
             <div class="custom-control custom-checkbox">
-              <input type="checkbox" class="custom-control-input" id="card-info" required="">
+              <input type="checkbox" class="custom-control-input" name="checkbox" id="card-info" checked>
               <label class="custom-control-label" for="card-info">信用卡</label>
             </div>
           </div>
-          <div class="card-info-block" style="display: none;">
+          <div class="card-info-block">
             <div class="m-auto row">
               <label class="container-title-name col-5 col-md-3">商店行業類別</label>
               <select class="custom-select col-7 col-md-9 d-block" id="product_type" required="">
@@ -99,7 +111,7 @@
               <input type="text" class="form-control col-7 col-md-9" id="id" placeholder="請輸入商店英文名稱" required="">
             </div>
           </div>
-          <div class="row">
+          <!-- <div class="row">
             <div class="col-6 btn-block-content text-center p-0">
               <button class="btn-back btn btn-block" type="button">上一步</button>
             </div>
@@ -107,8 +119,66 @@
               <button class="btn-next btn btn-block" type="submit">下一步</button>
               <small>＊上列資訊與撥款作業有關，請務必填寫正確資料</small>
             </div>
-          </div>
+          </div> -->
+          <!-- <center>
+            <div class="col-6 btn-block-content text-center p-0">
+              <button class="btn-back btn btn-block" type="button">上一步</button>
+            </div>
+            <div class="col-6 btn-block-content text-center p-0">
+              <button class="btn-next btn btn-block" type="submit">下一步</button>
+              <small>＊上列資訊與撥款作業有關，請務必填寫正確資料</small>
+            </div>
+          </center> -->
+          <center>
+            <div class="btn-block-content">
+              <button class="btn-back btn" type="button">上一步</button>
+              <button class="btn-next btn" type="submit" data-toggle="modal" data-target="#formError">下一步</button>
+            </div>
+            <small>＊上列資訊與撥款作業有關，請務必填寫正確資料</small>
+          </center>
         </form>
+
+        <!-- Modal FormCorrect -->
+        <div class="modal fade" id="formCorrect" tabindex="-1" role="dialog" aria-labelledby="formCorrectLabel"
+          aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="formCorrectLabel">註冊成功</h5>
+              </div>
+              <div class="modal-body">
+                當您申請線上收款服務後，您將收到一封帳號開通信件及一封測試環境開通信件，測試環境開通信件檢附〔商店檢核表〕，待您測試完畢後填妥檢核表即進入審核階段，壹壹柒柒科技將根據您所提交的商店申請資料進行審核，審核時間約1~2個工作天審核通過後，您將收到一封〔商店開通正式通知信〕，即可開始使用系統。
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary" onclick="window.location.href='index.html'">確認</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Modal FormCorrect -->
+
+        <!-- Modal FormError -->
+        <div class="modal fade" id="formError" tabindex="-1" role="dialog" aria-labelledby="formErrorLabel"
+          aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="formErrorLabel">格式錯誤</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                您的格式有錯誤，請重新填寫，感謝!
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">確認</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Modal FormError -->
+
       </div>
     </div>
     <footer>
@@ -118,15 +188,29 @@
   <script src="./js/jquery-3.5.1.slim.min.js"></script>
   <script src="./assets/dist/js/bootstrap.bundle.js"></script>
   <script src="./js/form-validation.js"></script>
+  <script src="plugin/select2/select2.min.js?20190506"></script>
+  <script src="js/form.js?20190506"></script>
   <script>
     $('#card-info').on('click', function (event) {
       var set_to_true = $(this).prop('checked') ? 'true' : 'false';
-      if (set_to_true == 'true') {
-        $('.card-info-block').css('display', 'block');
-      } else {
+      if (set_to_true == 'false') {
         $('.card-info-block').css('display', 'none');
+      } else {
+        $('.card-info-block').css('display', 'block');
       }
     });
+   
+    $(".btn-next").click(function(){
+			var check=$("input[name='checkbox']:checked").length;//判斷有多少個方框被勾選
+			if(check==0){
+				alert("您未勾選任何項目");
+				return false;//不要提交表單
+			}else{
+				alert("你勾選了"+check+"個項目");
+				return true;//提交表單
+			}
+		})
+
   </script>
 </body>
 
