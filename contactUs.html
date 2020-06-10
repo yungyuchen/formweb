@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -38,12 +39,13 @@
         }
     }
 </style>
+
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-light p-0">
             <a class="navbar-brand" href="#"><img class="logo d-inline-block ml-3 w-100" src="./images/logo.svg"
                     alt=""></a>
-            <div class="logo-title d-inline-block"><span class="mr-2">|</span>線上收款服務</div>
+            <div class="logo-title d-inline-block"></div>
             <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
                 data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -51,8 +53,20 @@
             </button>
             <div class="navbar-collapse collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto navbar-nav-left">
-                    <li class="nav-item logo-title active">
-                        <a class="nav-link" href="#">產品服務</a>
+                    <li class="nav-item logo-title dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            產品服務
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">網站行銷</a>
+                            <a class="dropdown-item" href="#">線上帳單發送</a>
+                            <a class="dropdown-item" href="#">社群平台銷售</a>
+                            <a class="dropdown-item" href="#">電子繳費單</a>
+                            <a class="dropdown-item" href="#">愛心捐款</a>
+                            <a class="dropdown-item" href="#">電商購物</a>
+                            <a class="dropdown-item" href="#">行動收款</a>
+                        </div>
                     </li>
                     <li class="nav-item logo-title">
                         <a class="nav-link" href="#">開發者中心</a>
@@ -60,7 +74,7 @@
                 </ul>
                 <ul class="navbar-nav ml-auto navbar-nav-right">
                     <li class="nav-item logo-title active">
-                        <a class="nav-link" href="#">會員入口</a>
+                        <a class="nav-link" href="#">前往會員版</a>
                     </li>
                     <li class="nav-item logo-title">
                         <a class="nav-link store-Entrance" href="#">商家入口</a>
@@ -97,9 +111,12 @@
                         <label class="container-title-name col-4 col-md-3">主旨</label>
                         <select class="col-8 col-md-6 custom-select d-block" id="product_type" required="">
                             <option value="">請選擇主旨類別</option>
-                            <option>實體商品</option>
-                            <option>虛擬商品</option>
-                            <option>遞延性服務</option>
+                            <option>註冊流程</option>
+                            <option>服務串接</option>
+                            <option>帳務相關</option>
+                            <option>支付交易</option>
+                            <option>行動支付</option>
+                            <option>其他</option>
                         </select>
                     </div>
                     <div class="row m-auto mt-1">
@@ -118,9 +135,9 @@
                     </div>
                     <center>
                         <div class="btn-block-content">
-                          <button class="btn-next btn m-auto" type="submit">送出</button>
+                            <button class="btn-next btn m-auto" type="submit">送出</button>
                         </div>
-                      </center>
+                    </center>
                 </form>
             </div>
         </div>
@@ -132,4 +149,5 @@
     <script src="./assets/dist/js/bootstrap.bundle.js"></script>
     <script src="./js/form-validation.js"></script>
 </body>
+
 </html>

@@ -179,6 +179,29 @@
         </div>
         <!-- Modal FormError -->
 
+        <!-- Modal checkboxError -->
+        <button class="checkboxError" type="text" style="display: none;" data-toggle="modal" data-target="#checkboxError"></button>
+        <div class="modal fade" id="checkboxError" tabindex="-1" role="dialog" aria-labelledby="checkboxErrorLabel"
+          aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="checkboxErrorLabel">尚未選擇支付工具</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                請至少勾選一種支付工具，感謝!
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">確認</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Modal checkboxError -->
+
       </div>
     </div>
     <footer>
@@ -191,6 +214,8 @@
   <script src="plugin/select2/select2.min.js?20190506"></script>
   <script src="js/form.js?20190506"></script>
   <script>
+
+    // card-info-block
     $('#card-info').on('click', function (event) {
       var set_to_true = $(this).prop('checked') ? 'true' : 'false';
       if (set_to_true == 'false') {
@@ -199,11 +224,13 @@
         $('.card-info-block').css('display', 'block');
       }
     });
-   
+
+    //  checkbox != 0
     $(".btn-next").click(function(){
 			var check=$("input[name='checkbox']:checked").length;
 			if(check==0){
-				return false;
+        $('.checkboxError').click();
+				// return false;
 			}else{
 				return true;
 			}
