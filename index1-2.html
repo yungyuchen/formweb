@@ -106,7 +106,7 @@
           <h5 class="font-color-1177pay">支付工具申請</h5>
           <div class="payway-checkbox row m-auto">
             <div class="custom-control custom-checkbox">
-              <input type="checkbox" class="custom-control-input" name="checkbox"  id="save-info1" checked>
+              <input type="checkbox" class="custom-control-input" name="checkbox" id="save-info1" checked>
               <label class="custom-control-label" for="save-info1">虛擬帳號</label>
             </div>
             <div class="custom-control custom-checkbox">
@@ -194,7 +194,8 @@
         <!-- Modal FormError -->
 
         <!-- Modal checkboxError -->
-        <button class="checkboxError" type="text" style="display: none;" data-toggle="modal" data-target="#checkboxError"></button>
+        <button class="checkboxError" type="text" style="display: none;" data-toggle="modal"
+          data-target="#checkboxError"></button>
         <div class="modal fade" id="checkboxError" tabindex="-1" role="dialog" aria-labelledby="checkboxErrorLabel"
           aria-hidden="true">
           <div class="modal-dialog" role="document">
@@ -228,7 +229,6 @@
   <script src="plugin/select2/select2.min.js?20190506"></script>
   <script src="js/form.js?20190506"></script>
   <script>
-
     // card-info-block
     $('#card-info').on('click', function (event) {
       var set_to_true = $(this).prop('checked') ? 'true' : 'false';
@@ -238,18 +238,31 @@
         $('.card-info-block').css('display', 'block');
       }
     });
+    
+    $(".btn-next").click(function () {
 
-    //  checkbox != 0
-    $(".btn-next").click(function(){
-			var check=$("input[name='checkbox']:checked").length;
-			if(check==0){
+      //  checkselect != ''
+      if ($('#a_bankid_list').val() == '') {
+        $('.custom-select').addClass('has-error');
+      }
+
+      //  checkbox != 0
+      var check = $("input[name='checkbox']:checked").length;
+      if (check == 0) {
         $('.checkboxError').click();
-				// return false;
-			}else{
-				return true;
-			}
-		})
+        // return false;
+      } else {
+        return true;
+      }
 
+    });
+
+    $("#a_bankid_list").change(function () {
+      if ($('#a_bankid_list').val() != '') {
+        $('.custom-select').removeClass('has-error');
+      }
+    });
+  
   </script>
 </body>
 

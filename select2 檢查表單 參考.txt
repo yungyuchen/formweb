@@ -1,0 +1,8 @@
+select2 檢查表單 參考
+
+
+https://www.okler.net/forums/topic/form-validation-jquery-validate-select2-input-groups/
+
+
+官方範例
+http://preview.oklerthemes.com/porto-admin/1.5.5/forms-validation.html

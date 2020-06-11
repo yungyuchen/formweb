@@ -9,10 +9,10 @@
     <meta name="generator" content="Jekyll v4.0.1">
     <title>1177WebSite</title>
     <!-- Bootstrap core CSS -->
-    <link href="./assets/dist/css/bootstrap.css" rel="stylesheet">
-    <link href="./css/layout.css" rel="stylesheet">
-    <!-- Process Circle CSS -->
-    <link href="./css/process-circle.css" rel="stylesheet">
+  <link href="./assets/dist/css/bootstrap.css" rel="stylesheet">
+  <link href="./css/layout.css" rel="stylesheet">
+  <!-- Process Circle CSS -->
+  <link href="./css/process-circle.css" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href="form-validation.css" rel="stylesheet">
 </head>
@@ -62,51 +62,48 @@
                 <div class="row text-center mb-3">
                     <small class="col-md-9 m-auto">＊檔案上限為5MB，僅接受JPG.JPEG.PDF格式檔案</small>
                 </div>
-                <form class="m-auto needs-validation" novalidate="" style="max-width: 600px;">
-                    <div class="m-auto row uploadBlock1">
-                        <label class="col-6 col-md-3 container-title-name">公司經濟部設立函／變更登記表</label>
-                        <div class="col-6 col-md-4 custom-file m-auto p-0">
-                            <img id="upload1" class="upload-img" src="./images/upload1.svg" width="100%">
+                <form class="m-auto needs-validation" novalidate="" style="max-width: 400px;">
+                    <div class="m-auto row">
+                        <label class="col-5 col-md-6 container-title-name">公司經濟部設立函／變更登記表</label>
+                        <div class="col-7 col-md-6 custom-file">
+                            <img id="upload1" class="upload" src="./images/upload1.svg" width="100%">
                             <input id="realUpload1" type="file" name="realUpload1" style="display:none" required>
-                            <span class="deleteFile deleteFile1"></span>
+
+                            <!-- <img id="upload1" src="./images/upload1.svg">
+                            <input id="realUpload11" type="file" name="upload1" style="display:none"> -->
+                            <!-- <input type="file" class="form-control-file p-2" id=""> -->
                         </div>
-                        <label class="rwd-block col-6 col-md-3 m-auto"></label>
-                        <div class="uploadName col-6 col-md-4"></div>
                     </div>
-                    <div class="m-auto row uploadBlock2">
-                        <label class="col-6 col-md-3 container-title-name">負責人身分證正反面</label>
-                        <div class="col-6 col-md-4 custom-file m-auto p-0">
-                            <img id="upload2" class="upload-img" src="./images/upload2.svg" width="100%">
+                    <div class="m-auto row">
+                        <label class="col-5 col-md-6 container-title-name">負責人身分證正反面</label>
+                        <div class="col-7 col-md-6 custom-file">
+                            <img id="upload2" class="upload" src="./images/upload2.svg" width="100%">
                             <input id="realUpload2" type="file" name="realUpload2" style="display:none">
-                            <span class="deleteFile deleteFile2"></span>
+                            <!-- <input type="file" class="form-control-file p-2" id=""> -->
                         </div>
-                        <label class="rwd-block col-6 col-md-3 m-auto"></label>
-                        <div class="uploadName col-6 col-md-4"></div>
                     </div>
-                    <div class="m-auto row uploadBlock3">
-                        <label class="col-6 col-md-3 container-title-name">公司存摺封面</label>
-                        <div class="col-6 col-md-4 custom-file m-auto p-0">
-                            <img id="upload3" class="upload-img" src="./images/upload3.svg" width="100%">
+                    <div class="m-auto row">
+                        <label class="col-5 col-md-6 container-title-name">公司存摺封面</label>
+                        <div class="col-7 col-md-6 custom-file">
+                            <img id="upload3" class="upload" src="./images/upload3.svg" width="100%">
                             <input id="realUpload3" type="file" name="realUpload3" style="display:none">
-                            <span class="deleteFile deleteFile3"></span>
+                            <!-- <input type="file" class="form-control-file p-2" id=""> -->
                         </div>
-                        <label class="rwd-block col-6 col-md-3 m-auto"></label>
-                        <div class="uploadName col-6 col-md-4"></div>
                     </div>
                     <div class="m-auto row">
-                        <label class="col-6 col-md-3 container-title-name m-auto">驗證碼</label>
-                        <input type="text" class="col-6 col-md-4 form-control m-auto" id="product_url"
-                            placeholder="請輸入驗證碼" required="" style="margin-left: 20px;">
-                        <label class="col-6 col-md-4 m-auto"></label>
+                        <label class="container-title-name col-5 col-md-6">驗證碼</label>
+                        <input type="text" class="col-6 col-md-5 form-control" id="product_url" placeholder="請輸入驗證碼"
+                            required="" style="margin-left: 20px;">
                     </div>
                     <div class="m-auto row">
-                        <label class="col-6 col-md-3 m-auto"></label>
-                        <em class="captcha col-6 col-md-4"
+                        <label class="container-title-name col-5 col-md-6"></label>
+                        <em class="captcha col-6 col-md-5"
                             style="text-align: center;background-color: #ccc;font-size: 24px;">1 2
                             3 4</em>
-                        <label class="col-6 col-md-4 m-auto"></label>
                     </div>
-                    <div class="m-auto row pt-4">
+                    <div class="m-auto row">
+                    </div>
+                    <div class="m-auto row">
                         <div class="custom-control custom-checkbox col-md-12 mt-3 text-center">
                             <input type="checkbox" class="custom-control-input " id="save-info1" required="">
                             <label class="custom-control-label agree1177pay"
@@ -115,18 +112,24 @@
                             </label>
                             <div class="notice d-inline"></div>
                         </div>
+                        <div class="col-6 btn-block-content text-center mt-3">
+                            <button class="btn-back btn btn-block" type="button">上一步</button>
+                        </div>
+                        <div class="col-6 btn-block-content text-center mt-3">
+                            <button class="btn-next btn btn-block" type="submit">送出</button>
+                        </div>
                     </div>
                     <center>
-                        <div class="btn-block-content" style="margin-top: 5px;">
+                        <div class="btn-block-content">
                             <button class="btn-back btn" type="button">上一步</button>
-                            <button class="btn-next btn" type="submit" data-toggle="modal" data-target="#formError"
-                                onclick="submitXML()">送出</button>
+                            <button class="btn-next btn" type="submit" data-toggle="modal"
+                                data-target="#formError" onclick="submitXML()">送出</button>
                         </div>
                     </center>
                 </form>
 
                 <!-- Modal FormCorrect -->
-                <div class="modal fade" id="formCorrect" tabindex="-1" role="dialog" aria-labelledby="formError"
+                <div class="modal fade" id="formCorrect" tabindex="-1" role="dialog" aria-labelledby="formCorrectLabel"
                     aria-hidden="true">
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">
@@ -166,7 +169,6 @@
                     </div>
                 </div>
                 <!-- Modal FormError -->
-
             </div>
         </div>
         <footer>
@@ -177,55 +179,63 @@
     <script src="./assets/dist/js/bootstrap.bundle.js"></script>
     <script src="./js/form-validation.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-
+ 
     <script>
-        $('#upload1').on('click', function () {
-            $('#realUpload1').click();
+        $('#upload1').on('click', function(){
+			$('#realUpload1').click();
         });
 
-        $('#upload2').on('click', function () {
-            $('#realUpload2').click();
+        $('#upload2').on('click', function(){
+			$('#realUpload2').click();
         });
 
-        $('#upload3').on('click', function () {
-            $('#realUpload3').click();
+        $('#upload3').on('click', function(){
+			$('#realUpload3').click();
         });
+        
+        $('#realUpload1').change(function(e){
+            readURL(this);
 
-        $('#realUpload1').change(function (e) {
+            var files = e.target.files;
+            if(files.length>0){
+                // 獲取檔名 並顯示檔名
+                var fileName = files[0].name;
+                // $(".js_address-input").val(fileName);
+                console.log('realUpload1 name = ' + fileName);
+            }
+            // var fileInputName1 = $(this).files[0].name;
+		});
+
+        $('#realUpload2').change(function(e){
             readURL(this);
             var files = e.target.files;
-            if (files.length > 0) {
+            if(files.length>0){
+                // 獲取檔名 並顯示檔名
                 var fileName = files[0].name;
-                $(this).parents('.custom-file').siblings('.uploadName').text(fileName);
+                // $(".js_address-input").val(fileName);
+                console.log('realUpload1 name = ' + fileName);
             }
         });
 
-        $('#realUpload2').change(function (e) {
+        $('#realUpload3').change(function(e){
             readURL(this);
             var files = e.target.files;
-            if (files.length > 0) {
+            if(files.length>0){
+                // 獲取檔名 並顯示檔名
                 var fileName = files[0].name;
-                var uploadName = $(this).parents('.custom-file').siblings('.uploadName');
-                uploadName.text(fileName);
+                // $(".js_address-input").val(fileName);
+                console.log('realUpload1 name = ' + fileName);
             }
         });
-
-        $('#realUpload3').change(function (e) {
-            readURL(this);
-            var files = e.target.files;
-            if (files.length > 0) {
-                var fileName = files[0].name;
-                $(this).parents('.custom-file').siblings('.uploadName').text(fileName);
-            }
-        });
-
-        function readURL(input) {
-            if (input.files && input.files[0]) {
-                $(input).siblings('.upload').attr('src', './images/uploadOK.svg');
-                $(input).siblings('.deleteFile').css('display', 'block');
-            }
-        };
-
+        function readURL(input){
+			  if(input.files && input.files[0]){
+                console.log('file is selected');
+                console.log('input = ' + input);
+                $(input).siblings('.upload').attr('src','./images/uploadOK.svg');
+                
+			  }
+			};
+        
         function submitXML() {
             var fileInput1 = $('#realUpload1').get(0).files[0];
             var fileInput2 = $('#realUpload2').get(0).files[0];
@@ -238,45 +248,26 @@
                 $("#realUploadform").submit();
             } else {
                 alert("請選擇上傳檔案！");
-                $('#upload1').attr('src', './images/uploadError1.svg');
+                $('#upload1').attr('src','./images/uploadError1.svg');
             };
 
             if (fileInput2) {
                 $("#realUploadform").submit();
             } else {
                 alert("請選擇上傳檔案！");
-                $('#upload2').attr('src', './images/uploadError2.svg');
+                $('#upload2').attr('src','./images/uploadError2.svg');
             };
 
             if (fileInput3) {
                 $("#realUploadform").submit();
             } else {
                 alert("請選擇上傳檔案！");
-                $('#upload3').attr('src', './images/uploadError3.svg');
+                $('#upload3').attr('src','./images/uploadError3.svg');
             };
+            
         };
 
-        $('.deleteFile1').on('click', function () {
-            $(this).siblings('#realUpload1').val('');
-            $(this).parents('.custom-file').siblings('.uploadName').text('');
-            $(this).siblings('.upload').attr('src', './images/upload1.svg');
-            $(this).css('display', 'none');
-        });
-
-        $('.deleteFile2').on('click', function () {
-            $(this).siblings('#realUpload2').val('');
-            $(this).parents('.custom-file').siblings('.uploadName').text('');
-            $(this).siblings('.upload').attr('src', './images/upload2.svg');
-            $(this).css('display', 'none');
-        });
-
-        $('.deleteFile3').on('click', function () {
-            $(this).siblings('#realUpload3').val('');
-            $(this).parents('.custom-file').siblings('.uploadName').text('');
-            $(this).siblings('.upload').attr('src', './images/upload3.svg');
-            $(this).css('display', 'none');
-        });
-    </script>
+	</script>
 </body>
 
 </html>

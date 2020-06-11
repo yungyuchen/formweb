@@ -60,53 +60,37 @@
                     <div class="m-auto row uploadBlock1">
                         <label class="col-6 col-md-3 container-title-name">公司經濟部設立函／變更登記表</label>
                         <div class="col-6 col-md-4 custom-file m-auto p-0">
-                            <!-- <button class="btn-next btn btn-block" type="" style="max-width: 200px; width: 100%;">送出</button> -->
                             <img id="upload1" class="upload-img" src="./images/upload1.svg" width="100%">
                             <input id="realUpload1" type="file" name="realUpload1" style="display:none" required>
-                            <!-- <img id="upload1" src="./images/upload1.svg">
-                            <input id="realUpload11" type="file" name="upload1" style="display:none"> -->
-                            <!-- <input type="file" class="form-control-file p-2" id=""> -->
                             <span class="deleteFile deleteFile1"></span>
                         </div>
                         <label class="rwd-block col-6 col-md-3 m-auto"></label>
                         <div class="uploadName col-6 col-md-4"></div>
-                        <!-- <div class="col-7 col-md-6 custom-file">
-                            <input type="file" class="form-control-file p-2" id="">
-                        </div> -->
                     </div>
                     <div class="m-auto row uploadBlock2">
                         <label class="col-6 col-md-3 container-title-name">負責人身分證正反面</label>
                         <div class="col-6 col-md-4 custom-file m-auto p-0">
-                            <!-- <button class="btn-next btn btn-block" type="" style="max-width: 200px; width: 100%;">送出</button> -->
                             <img id="upload2" class="upload-img" src="./images/upload2.svg" width="100%">
                             <input id="realUpload2" type="file" name="realUpload2" style="display:none">
-                            <!-- <input type="file" class="form-control-file p-2" id=""> -->
                             <span class="deleteFile deleteFile2"></span>
                         </div>
                         <label class="rwd-block col-6 col-md-3 m-auto"></label>
                         <div class="uploadName col-6 col-md-4"></div>
-                        <!-- <div class="col-7 col-md-6 custom-file">
-                            <input type="file" class="form-control-file p-2" id="">
-                        </div> -->
                     </div>
                     <div class="m-auto row uploadBlock3">
                         <label class="col-6 col-md-3 container-title-name">公司存摺封面</label>
                         <div class="col-6 col-md-4 custom-file m-auto p-0">
-                            <!-- <button class="btn-next btn btn-block" type="" style="max-width: 200px; width: 100%;">送出</button> -->
                             <img id="upload3" class="upload-img" src="./images/upload3.svg" width="100%">
                             <input id="realUpload3" type="file" name="realUpload3" style="display:none">
-                            <!-- <input type="file" class="form-control-file p-2" id=""> -->
                             <span class="deleteFile deleteFile3"></span>
                         </div>
                         <label class="rwd-block col-6 col-md-3 m-auto"></label>
                         <div class="uploadName col-6 col-md-4"></div>
-                        <!-- <div class="col-7 col-md-6 custom-file">
-                            <input type="file" class="form-control-file p-2" id="">
-                        </div> -->
                     </div>
                     <div class="m-auto row">
                         <label class="col-6 col-md-3 container-title-name m-auto">驗證碼</label>
-                        <input type="text" class="col-6 col-md-4 form-control m-auto" id="product_url" placeholder="請輸入驗證碼"required="" style="margin-left: 20px;">
+                        <input type="text" class="col-6 col-md-4 form-control m-auto" id="product_url"
+                            placeholder="請輸入驗證碼" required="" style="margin-left: 20px;">
                         <label class="col-6 col-md-4 m-auto"></label>
                     </div>
                     <div class="m-auto row">
@@ -130,8 +114,8 @@
                     <center>
                         <div class="btn-block-content" style="margin-top: 5px;">
                             <button class="btn-back btn" type="button">上一步</button>
-                            <button class="btn-next btn" type="submit" data-toggle="modal"
-                                data-target="#formError" onclick="submitXML()">送出</button>
+                            <button class="btn-next btn" type="submit" data-toggle="modal" data-target="#formError"
+                                onclick="submitXML()">送出</button>
                         </div>
                     </center>
                 </form>
@@ -190,77 +174,53 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 
     <script>
-        $('#upload1').on('click', function(){
-			$('#realUpload1').click();
+        $('#upload1').on('click', function () {
+            $('#realUpload1').click();
         });
 
-        $('#upload2').on('click', function(){
-			$('#realUpload2').click();
+        $('#upload2').on('click', function () {
+            $('#realUpload2').click();
         });
 
-        $('#upload3').on('click', function(){
-			$('#realUpload3').click();
+        $('#upload3').on('click', function () {
+            $('#realUpload3').click();
         });
-        
-        $('#realUpload1').change(function(e){
+
+        $('#realUpload1').change(function (e) {
             readURL(this);
-
             var files = e.target.files;
-            if(files.length>0){
-                // 獲取檔名 並顯示檔名
+            if (files.length > 0) {
                 var fileName = files[0].name;
                 $(this).parents('.custom-file').siblings('.uploadName').text(fileName);
-                // $(".js_address-input").val(fileName);
-                console.log('realUpload1 name = ' + fileName);
-                // console.log( $('.uploadName').text() );
-                
-                // var fileUploadName = $(this).parents('.custom-file').siblings('.uploadName').text();
-                // console.log('fileUploadName = ' + fileUploadName );
-                // if (fileUploadName != ''){
-                //     fileUploadName = '';
-                //     console.log('fileUploadName = ' + fileUploadName);
-                //     fileUploadName = fileName;
-                //     console.log('fileUploadName = ' + fileUploadName);
-                // }
             }
-            // var fileInputName1 = $(this).files[0].name;
-		});
+        });
 
-        $('#realUpload2').change(function(e){
+        $('#realUpload2').change(function (e) {
             readURL(this);
             var files = e.target.files;
-            if(files.length>0){
-                // 獲取檔名 並顯示檔名
+            if (files.length > 0) {
                 var fileName = files[0].name;
                 var uploadName = $(this).parents('.custom-file').siblings('.uploadName');
-                
                 uploadName.text(fileName);
-                // $(".js_address-input").val(fileName);
-                console.log('fileName name = ' + fileName);
-
             }
         });
 
-        $('#realUpload3').change(function(e){
+        $('#realUpload3').change(function (e) {
             readURL(this);
             var files = e.target.files;
-            if(files.length>0){
-                // 獲取檔名 並顯示檔名
+            if (files.length > 0) {
                 var fileName = files[0].name;
                 $(this).parents('.custom-file').siblings('.uploadName').text(fileName);
-                // $(".js_address-input").val(fileName);
-                console.log('realUpload1 name = ' + fileName);
             }
         });
-        function readURL(input){
-			  if(input.files && input.files[0]){
-                console.log('file is selected');
-                console.log('input = ' + input);
-                $(input).siblings('.upload').attr('src','./images/uploadOK.svg');
-                $(input).siblings('.deleteFile').css('display','block');
-			  }
-			};
-        
+
+        function readURL(input) {
+            if (input.files && input.files[0]) {
+                $(input).siblings('.upload').attr('src', './images/uploadOK.svg');
+                $(input).siblings('.deleteFile').css('display', 'block');
+            }
+        };
+
         function submitXML() {
             var fileInput1 = $('#realUpload1').get(0).files[0];
             var fileInput2 = $('#realUpload2').get(0).files[0];
@@ -273,49 +233,46 @@
                 $("#realUploadform").submit();
             } else {
                 alert("請選擇上傳檔案！");
-                $('#upload1').attr('src','./images/uploadError1.svg');
+                $('#upload1').attr('src', './images/uploadError1.svg');
             };
 
             if (fileInput2) {
                 $("#realUploadform").submit();
             } else {
                 alert("請選擇上傳檔案！");
-                $('#upload2').attr('src','./images/uploadError2.svg');
+                $('#upload2').attr('src', './images/uploadError2.svg');
             };
 
             if (fileInput3) {
                 $("#realUploadform").submit();
             } else {
                 alert("請選擇上傳檔案！");
-                $('#upload3').attr('src','./images/uploadError3.svg');
+                $('#upload3').attr('src', './images/uploadError3.svg');
             };
-            
+
         };
 
-        $('.deleteFile1').on('click', function(){
+        $('.deleteFile1').on('click', function () {
             $(this).siblings('#realUpload1').val('');
             $(this).parents('.custom-file').siblings('.uploadName').text('');
-            $(this).siblings('.upload').attr('src','./images/upload1.svg');
-            $(this).css('display','none');
+            $(this).siblings('.upload').attr('src', './images/upload1.svg');
+            $(this).css('display', 'none');
         });
 
-        $('.deleteFile2').on('click', function(){
+        $('.deleteFile2').on('click', function () {
             $(this).siblings('#realUpload2').val('');
             $(this).parents('.custom-file').siblings('.uploadName').text('');
-            $(this).siblings('.upload').attr('src','./images/upload2.svg');
-            $(this).css('display','none');
+            $(this).siblings('.upload').attr('src', './images/upload2.svg');
+            $(this).css('display', 'none');
         });
 
-        $('.deleteFile3').on('click', function(){
+        $('.deleteFile3').on('click', function () {
             $(this).siblings('#realUpload3').val('');
             $(this).parents('.custom-file').siblings('.uploadName').text('');
-            $(this).siblings('.upload').attr('src','./images/upload3.svg');
-            $(this).css('display','none');
+            $(this).siblings('.upload').attr('src', './images/upload3.svg');
+            $(this).css('display', 'none');
         });
-
-        // $('#realUpload2').val("");
-
-	</script>
+    </script>
 </body>
 
 </html>
