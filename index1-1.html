@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="zh-Hant-TW">
 
 <head>
   <meta charset="utf-8">
@@ -34,6 +34,7 @@
 </style>
 
 <body>
+
   <header>
     <div class="container" style="max-width: 1024px;">
       <img class="logo d-inline-block ml-3" src="./images/logo.svg" alt="">
@@ -41,7 +42,9 @@
         <span class="mr-2">|</span>線上收款服務</div>
     </div>
   </header>
+
   <div class="container">
+
     <!-- container rocess -->
     <div class="container-rocess">
       <!-- <img src="./images/item_4step_01.png" alt=""> -->
@@ -76,10 +79,12 @@
       </div>
     </div>
     <!-- container rocess -->
+    
     <div class="container-form bg-white m-auto row">
       <div class="col-md-12 order-md-1">
         <h4 class="container-title">商家資料</h4>
         <form class="m-auto needs-validation" novalidate="" style="max-width: 650px;">
+
           <div class="row">
             <label class="container-title-name col-4 col-md-3">公司名稱</label>
             <input type="text" class="form-control col-8 col-md-6" id="company_name" placeholder="請輸入企業登記名稱"
@@ -87,30 +92,37 @@
             <label class="rwd-block col-4 col-md-3"></label>
             <small class="col-8 col-md-3 p-0">＊即提領帳戶名稱，請正確填寫</small>
           </div>
+
           <div class="row">
             <label class="container-title-name col-4 col-md-3">統一編號</label>
             <input type="text" class="form-control col-8 col-md-6" id="company_id" placeholder="請輸入企業統一編號" required="">
           </div>
+
           <div class="row">
             <label class="container-title-name col-4 col-md-3">負責人姓名</label>
             <input type="text" class="form-control col-8 col-md-6" id="name" placeholder="請輸入設立登記負責人姓名" required="">
           </div>
+
           <div class="row">
             <label class="container-title-name col-4 col-md-3">身份證字號</label>
             <input type="text" class="form-control col-8 col-md-6" id="id" placeholder="請輸入公司負責人身分證字號" required="">
           </div>
+
           <div class="row">
             <label class="container-title-name col-4 col-md-3">Email</label>
             <input type="email" class="col-8 col-md-6 form-control" id="email" placeholder="請輸入正確有效電子信箱" required="">
           </div>
+
           <div class="row">
             <label class="col-4 col-md-3"></label>
             <small class="col-8 col-md-9 p-0">＊電子郵件地址會是會員登入之識別帳號，為企業會員的最高權限人員所持有</small>
           </div>
+
           <div class="row">
             <label class="container-title-name col-4 col-md-3">聯絡電話</label>
             <input type="text" class="form-control col-8 col-md-6" id="phone" placeholder="請輸入手機門號或市話" required="">
           </div>
+
           <div class="row">
             <label class="container-title-name col-4 col-md-3">營業地址</label>
             <div class="col-4 col-md-2 pl-0 address-select">
@@ -124,6 +136,7 @@
                 <option>高雄市</option>
               </select>
             </div>
+
             <div class="col-4 col-md-2 pl-0 address-select">
               <select class="custom-select d-block w-100" id="company_state" required="">
                 <option value="">區域</option>
@@ -133,11 +146,13 @@
                 <option>內湖區</option>
               </select>
             </div>
+
             <label class="container-title-name col-4 col-md-3" style="display: none;"></label>
             <div class="col-8 col-md-5 pl-0">
               <input type="text" class="form-control" id="company_address" placeholder="請輸入地址" required="">
             </div>
           </div>
+
           <div class="row">
             <label class="container-title-name col-4 col-md-3">帳單地址</label>
             <div class="col-4 col-md-2 pl-0 address-select">
@@ -151,6 +166,7 @@
                 <option>高雄市</option>
               </select>
             </div>
+
             <div class="col-4 col-md-2 pl-0 address-select">
               <select class="custom-select d-block w-100" id="state" required="">
                 <option value="">區域</option>
@@ -160,11 +176,13 @@
                 <option>內湖區</option>
               </select>
             </div>
+
             <label class="container-title-name col-4 col-md-3" style="display: none;"></label>
             <div class="col-8 col-md-5 pl-0">
               <input type="text" class="form-control" id="address" placeholder="請輸入地址" required="">
             </div>
           </div>
+
           <div class="row">
             <label class="col-4 col-md-3"></label>
             <div class="custom-control custom-checkbox">
@@ -173,6 +191,7 @@
                 style="font-size: 12px; line-height: 24px;">同營業地址</label>
             </div>
           </div>
+
           <div class="row">
             <label class="container-title-name col-4 col-md-3">販售商品型態</label>
             <select class="col-8 col-md-6 custom-select d-block" id="product_type" required="">
@@ -182,6 +201,7 @@
               <option>遞延性服務</option>
             </select>
           </div>
+
           <div class="row">
             <label class="container-title-name col-4 col-md-3">商品網址</label>
             <input type="text" class="form-control col-8 col-md-6" id="product_url" placeholder="請輸入販售商品/服務的網址">
@@ -200,25 +220,6 @@
             <small>＊上列資訊與撥款作業有關，請務必填寫正確資料</small>
           </center>
         </form>
-
-        <!-- Modal FormCorrect -->
-        <div class="modal fade" id="formCorrect" tabindex="-1" role="dialog" aria-labelledby="formCorrectLabel"
-          aria-hidden="true">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="formCorrectLabel">註冊成功</h5>
-              </div>
-              <div class="modal-body">
-                當您申請線上收款服務後，您將收到一封帳號開通信件及一封測試環境開通信件，測試環境開通信件檢附〔商店檢核表〕，待您測試完畢後填妥檢核表即進入審核階段，壹壹柒柒科技將根據您所提交的商店申請資料進行審核，審核時間約1~2個工作天審核通過後，您將收到一封〔商店開通正式通知信〕，即可開始使用系統。
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-primary" onclick="window.location.href='index.html'">確認</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Modal FormCorrect -->
 
         <!-- Modal FormError -->
         <div class="modal fade" id="formError" tabindex="-1" role="dialog" aria-labelledby="formErrorLabel"
