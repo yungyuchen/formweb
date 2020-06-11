@@ -11,6 +11,8 @@
   <!-- Bootstrap core CSS -->
   <link href="./assets/dist/css/bootstrap.css" rel="stylesheet">
   <link href="./css/layout.css" rel="stylesheet">
+  <!-- Process Circle CSS -->
+  <link href="./css/process-circle.css" rel="stylesheet">
   <!-- Custom styles for this template -->
   <link href="form-validation.css" rel="stylesheet">
   <!-- select2 -->
@@ -26,13 +28,35 @@
     </div>
   </header>
   <div class="container">
+    <!-- container rocess -->
     <div class="container-rocess">
-      <img src="./images/item_3step_02.png" alt="">
+      <div>
+        <div class="approvalChecked">
+          <span class="circleNum">
+          </span>
+          <span class="approvalText step1">商家資料</span>
+        </div>
+        <div class="approval">
+          <span class="circleNum">
+            <span class="circleLine"></span>
+            2
+          </span>
+          <span class="approvalText step2">撥款帳戶與支付工具設定</span>
+        </div>
+        <div class="approvalDis">
+          <span class="circleNum">
+            <span class="circleLine"></span>
+            3
+          </span>
+          <span class="approvalText step4">證件上傳</span>
+        </div>
+      </div>
     </div>
+    <!-- container rocess -->
     <div class="container-form bg-white m-auto row">
       <div class="col-md-12 order-md-1">
         <h4 class="container-title">撥款帳戶與支付工具設定</h4>
-        <form class="m-auto needs-validation" novalidate="" style="max-width: 500px;">
+        <form class="m-auto needs-validation" novalidate="" style="max-width: 550px;">
           <h5 class="font-color-1177pay">帳務設定</h5>
             <!-- form-group row-->
           <div class="m-auto row">
@@ -343,7 +367,7 @@
             <input type="text" class="col-8 col-md-9 form-control" id="company_name" placeholder="請輸入銀行帳號" required="">
           </div>
           <h5 class="font-color-1177pay">支付工具申請</h5>
-          <div class="payway-checkbox row">
+          <div class="payway-checkbox row m-auto">
             <div class="custom-control custom-checkbox">
               <input type="checkbox" class="custom-control-input" name="checkbox"  id="save-info1" checked>
               <label class="custom-control-label" for="save-info1">虛擬帳號</label>
@@ -386,6 +410,7 @@
               <button class="btn-back btn" type="button">上一步</button>
               <button class="btn-next btn" type="submit" data-toggle="modal" data-target="#formError">下一步</button>
             </div>
+            <label class="rwd-btn-block col-6 col-md-6"></label>
             <small>＊上列資訊與撥款作業有關，請務必填寫正確資料</small>
           </center>
         </form>

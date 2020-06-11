@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200px" height="40px" viewBox="0 0 200 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>1EC89835-4DBF-4E97-B42A-AED1AF630C64</title>
+    <g id="申請流程" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="web_library" transform="translate(-268.000000, -684.000000)">
+            <g id="btn/upload/done_1024" transform="translate(268.000000, 684.000000)">
+                <g id="Group-7">
+                    <rect id="Rectangle-Copy-6" fill="#2595E4" x="0" y="0" width="200" height="40" rx="20"></rect>
+                    <g id="Group" transform="translate(55.000000, 8.000000)">
+                        <text id="已新增檔案" font-family="NotoSansCJKtc-Regular, Noto Sans CJK TC" font-size="16" font-weight="normal" letter-spacing="2.06451613" fill="#FFFFFF">
+                            <tspan x="0" y="19">已新增檔案</tspan>
+                        </text>
+                        <g id="ic_upload" transform="translate(105.000000, 0.000000)">
+                            <g id="Rectangle">
+                                <rect x="0" y="0" width="24" height="24"></rect>
+                            </g>
+                            <path d="M16,5 C16.2761424,5 16.5,5.22385763 16.5,5.5 L16.5,16.5 C16.5,16.7761424 16.2761424,17 16,17 C15.9091326,17 15.8239267,16.9757606 15.7504954,16.9333951 C15.6768109,16.9755503 15.5912607,17 15.5,17 L9.5,17 C9.22385763,17 9,16.7761424 9,16.5 C9,16.2238576 9.22385763,16 9.5,16 L15.5,16 L15.5,5.5 C15.5,5.22385763 15.7238576,5 16,5 Z" id="Combined-Shape" fill="#FFFFFF" transform="translate(12.750000, 11.000000) rotate(-315.000000) translate(-12.750000, -11.000000) "></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,212 @@
+.approval,
+.approvalChecked,
+.approvalDis {
+    display: inline-block;
+    text-align: center;
+}
+
+.approval .circleNum {
+    position: relative;
+    border-radius: 50%;
+    border: 1px solid;
+    color: #2595E4;
+    background-image: url(../../assets/images/circle.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: block;
+    width: 30px;
+    height: 30px;
+    line-height: 25px;
+    margin: 0 auto;
+    z-index: 9;
+}
+
+.approval .approvalText {
+    color: #2595E4;
+    display: block;
+    width: 180px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.approval .circleLine {
+    height: 1px;
+    width: 115px;
+    background: #DDDDDD;
+    position: absolute;
+    top: 14px;
+    right: 50px;
+    z-index: 1;
+}
+
+/* 未抵達關卡 */
+
+.approvalDis .circleNum {
+    position: relative;
+    border-radius: 50%;
+    border: 1px solid;
+    color: #797979;
+    background-image: url(../../assets/images/done_1024.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: block;
+    width: 30px;
+    height: 30px;
+    line-height: 25px;
+    margin: 0 auto;
+    z-index: 9;
+}
+
+.approvalDis .circleLine {
+    height: 1px;
+    width: 115px;
+    background: #DDDDDD;
+    position: absolute;
+    top: 14px;
+    right: 50px;
+    z-index: 1;
+}
+
+.approvalDis .approvalText {
+    color: #797979;
+    display: block;
+    width: 180px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.approvalChecked .circleNum {
+    position: relative;
+    border-radius: 50%;
+    border: unset;
+    background-image: url(../images/done_1024.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: block;
+    width: 30px;
+    height: 30px;
+    line-height: 25px;
+    margin: 0 auto;
+    z-index: 9;
+}
+
+.approvalChecked .circleLine {
+    height: 1px;
+    width: 115px;
+    background: #DDDDDD;
+    position: absolute;
+    top: 14px;
+    right: 50px;
+    z-index: 1;
+}
+
+.approvalChecked .approvalText {
+    color: #797979;
+    display: block;
+    width: 180px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+@media (max-width: 767px) {
+
+    .approval,
+    .approvalChecked,
+    .approvalDis {
+        display: inline-block;
+        text-align: center;
+        width: 80px;
+        margin: 0 -2px;
+    }
+
+    /* 現在關卡 */
+
+    .approval .circleNum {
+        color: #2595E4;
+        width: 14px;
+        height: 14px;
+        line-height: 11px;
+        margin: 0 auto;
+        font-size: 7px;
+    }
+
+    .approval .approvalText {
+        width: 75px;
+        font-size: 8px;
+    }
+
+    .approval .circleLine {
+        width: 55px;
+        top: 5px;
+        right: 20px;
+    }
+
+    /* 未抵達關卡 */
+
+    .approvalDis .circleNum {
+        width: 14px;
+        height: 14px;
+        line-height: 11px;
+        z-index: 9;
+        font-size: 7px;
+    }
+
+    .approvalDis .circleLine {
+        width: 55px;
+        top: 5px;
+        right: 20px;
+    }
+
+    .approvalDis .approvalText {
+        color: #797979;
+        display: block;
+        width: 100px;
+        font-weight: bold;
+        font-size: 8px;
+    }
+
+    /* 未抵達關卡 */
+
+    .approvalChecked .circleNum {
+        width: 14px;
+        height: 14px;
+        line-height: 11px;
+        z-index: 9;
+        font-size: 7px;
+    }
+
+    .approvalChecked .circleLine {
+        width: 55px;
+        top: 5px;
+        right: 20px;
+    }
+
+    .approvalChecked .approvalText {
+        color: #797979;
+        display: block;
+        width: 75px;
+        font-weight: bold;
+        font-size: 8px;
+    }
+
+    .approvalText.step1 {
+        /* margin-left: -15px; */
+    }
+
+    .approvalText.step2 {
+        width: 100px;
+        margin-left: -15px;
+    }
+
+    .approvalText.step3 {
+        margin-left: -15px;
+    }
+
+    .approvalText.step4 {
+        margin-left: -15px;
+    }
+
+}

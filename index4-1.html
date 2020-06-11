@@ -11,26 +11,66 @@
   <!-- Bootstrap core CSS -->
   <link href="./assets/dist/css/bootstrap.css" rel="stylesheet">
   <link href="./css/layout.css" rel="stylesheet">
+  <!-- Process Circle CSS -->
+  <link href="./css/process-circle.css" rel="stylesheet">
   <!-- Custom styles for this template -->
   <link href="form-validation.css" rel="stylesheet">
 </head>
+<style>
+  @media (max-width: 767px) {
+    .needs-validation {
+      padding: 0 20px;
+    }
+  }
+</style>
 
 <body>
   <header>
     <div class="container" style="max-width: 1024px;">
       <img class="logo d-inline-block ml-3" src="./images/logo.svg" alt="">
       <div class="logo-title d-inline-block">
-        <span class="mr-2">|</span>線上收款服務</div>
+        <span class="mr-2">|</span>線上收款,服務</div>
     </div>
   </header>
   <div class="container">
+    <!-- container rocess -->
     <div class="container-rocess">
-      <img src="./images/item_4step_01.png" alt="">
+      <!-- <img src="./images/item_4step_01.png" alt=""> -->
+      <div>
+        <div class="approval">
+          <span class="circleNum">
+            1
+          </span>
+          <span class="approvalText step1">商家資料</span>
+        </div>
+        <div class="approvalDis">
+          <span class="circleNum">
+            <span class="circleLine"></span>
+            2
+          </span>
+          <span class="approvalText step2">撥款帳戶與支付工具設定</span>
+        </div>
+        <div class="approvalDis">
+          <span class="circleNum">
+            <span class="circleLine"></span>
+            3
+          </span>
+          <span class="approvalText step3">系統串接設定</span>
+        </div>
+        <div class="approvalDis">
+          <span class="circleNum">
+            <span class="circleLine"></span>
+            4
+          </span>
+          <span class="approvalText step4">證件上傳</span>
+        </div>
+      </div>
     </div>
+    <!-- container rocess -->
     <div class="container-form bg-white m-auto row">
       <div class="col-md-12 order-md-1">
         <h4 class="container-title">商家資料</h4>
-        <form class="m-auto needs-validation" novalidate="" style="max-width: 650px;">
+        <form class="m-auto needs-validation" novalidate="" style="max-width: 450px;">
           <div class="row">
             <label class="container-title-name col-4 col-md-3">姓名</label>
             <input type="text" class="form-control col-8 col-md-6" id="name" placeholder="請輸入姓名" required="">
@@ -41,8 +81,9 @@
           </div>
           <div class="row">
             <label class="container-title-name col-4 col-md-3">Email</label>
-            <input type="text" class="form-control col-8 col-md-6" id="company_name" placeholder="請輸入電子信箱" required="">
-            <small>＊會員登入之識別帳號</small>
+            <input type="text" class="form-control col-8 col-md-6" id="email" placeholder="請輸入電子信箱" required="">
+            <label class="rwd-block col-4 col-md-3" ></label>
+            <small class="col-8 col-md-3 p-0">＊會員登入之識別帳號</small>
           </div>
           <div class="row">
             <label class="container-title-name col-4 col-md-3">聯絡電話</label>
@@ -124,8 +165,8 @@
             <input type="text" class="form-control col-8 col-md-6" id="product_url" placeholder="請輸入販售商品/服務的網址">
           </div>
           <div class="row">
-            <label class="col-md-3 mb-0"></label>
-            <small class="col-md-9">＊請提供可辨識官網網址/賣場網址/商品或服務銷售的個人社群網址</small>
+            <label class="col-4 col-md-3"></label>
+            <small class="col-8 col-md-9 p-0">＊請提供可辨識官網網址/賣場網址/商品或服務銷售的個人社群網址</small>
           </div>
           <center>
             <div class="btn-block-content">
